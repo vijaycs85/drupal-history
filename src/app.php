@@ -22,6 +22,17 @@ krsort($result);
     <title>Drupal history</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+     <style>
+     .timeline {
+        position: absolute;
+         width: 10px;
+         height: 100%;
+         left: 50%;
+         margin-left: -6px;
+         z-index:-1;
+         background-image:linear-gradient(180deg, #ffc107 0%, #ffc107 100%);
+        }
+     </style>
 </head>
 <body>
 <header>
@@ -40,6 +51,7 @@ krsort($result);
     <section class="container">
         <?php foreach ($result as $year => $items): ?>
             <div class="year <?php print $year; ?>">
+                        <div class="timeline"></div>
                 <div class="row align-items-center">
                     <h4 class="btn btn-warning mx-auto"
                                                         style="width: 200px;"><?php print $year; ?></h4></div>
