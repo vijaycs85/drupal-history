@@ -1,0 +1,22 @@
+{
+  "name": "vijaycs85/drupal-history",
+  "description": "An attempt to create Drupal milestones of 20 years journey.",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://www.drupal.org/project/drupal",
+  "require": {
+    "guzzlehttp/guzzle": "^7.2"
+  },
+  "scripts": {
+    "build": "php src/app.php > public/index.html"
+  },
+  "authors": [
+    {
+      "name": "Vijaya Chandran Mani",
+      "homepage": "https://www.drupal.org/u/vijaycs85",
+      "role": "Maintainer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
