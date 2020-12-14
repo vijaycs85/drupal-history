@@ -8,7 +8,7 @@
     "guzzlehttp/guzzle": "^7.2"
   },
   "scripts": {
-    "build": "php src/app.php > public/index.html"
+    "build": "php src/app.php > docs/index.html"
   },
   "authors": [
     {
