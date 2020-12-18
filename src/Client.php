@@ -3,7 +3,6 @@
 namespace Vijaycs85\Drupal\History;
 
 use GuzzleHttp\ClientInterface;
-use GuzzleHttp\Client as HttpClient;
 use DateTime;
 use DateTimeInterface;
 use League\CommonMark\CommonMarkConverter;
@@ -30,10 +29,10 @@ class Client {
 
         foreach ($content as $delta => $item) {
             $date = DateTime::createFromFormat(DateTimeInterface::ATOM, $item->date);
-            foreach (['title', 'description'] as $property)  {
+            $item->version = $this->getVersion($item->title);
+            foreach (['description'] as $property)  {
                 $item->{$property} = $this->markdownConverter->convertToHtml($item->{$property});
             }
-            $item->version = $this->getVersion($item->title);
             if ($date) {
                 $result[$date->format('Y')][] = (array)$item;
             }
@@ -43,7 +42,7 @@ class Client {
     }
 
     protected function getVersion($title) {
-        preg_match('/^Drupal\s([0-9]\.[0-9]+)/', $title, $matches);
+        preg_match('/^Drupal\s([0-9]\.[0-9]+)/s', $title, $matches);
         return isset($matches[1]) ? $matches[1] : NULL;
     }
 

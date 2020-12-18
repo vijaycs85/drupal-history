@@ -36,7 +36,7 @@
             {%  for delta, item in items %}
             {% if delta % 2 == 0 %}<div class="row gx-5 gy-5">{% endif %}
             <div class="col-6{% if delta % 2 == 0 %} pt-5{% endif %}">
-                <h4>{{ item.title|raw }}{% if item.version %}<span class="badge bg-primary">{{ item.version }}</span>{% endif %}</h4>
+                <h4>{{ item.title|raw }}{% if item.version %} <span class="badge bg-primary">{{ item.version }}</span>{% endif %}</h4>
                 <div class="shadow p-3 mb-5 border bg-light shadow-md">{{ item.description|raw }}</div>
             </div>
             {% if delta % 2 == 1 or (items|length %2 ==1 and delta == items|length - 1) %}</div>{% endif %}
