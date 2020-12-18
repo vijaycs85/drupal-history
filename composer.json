@@ -5,10 +5,21 @@
   "license": "GPL-2.0-or-later",
   "homepage": "https://www.drupal.org/project/drupal",
   "require": {
-    "guzzlehttp/guzzle": "^7.2"
+    "guzzlehttp/guzzle": "^7.2",
+    "ext-json": "*",
+    "league/commonmark": "^1.5",
+    "symfony/dependency-injection": "^5.2",
+    "symfony/config": "^5.2",
+    "twig/twig": "^3.0",
+    "symfony/yaml": "^5.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vijaycs85\\Drupal\\History\\": "src/"
+    }
   },
   "scripts": {
-    "build": "php src/app.php > docs/index.html"
+    "build": "php app.php > docs/index.html"
   },
   "authors": [
     {

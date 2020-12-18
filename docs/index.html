@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Drupal history</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-     <style>
-     .timeline {
-        position: absolute;
-         width: 10px;
-         height: 100%;
-         left: 50%;
-         margin-left: -6px;
-         z-index:-1;
-         background-image:linear-gradient(180deg, #ffc107 0%, #ffc107 100%);
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        .timeline {
+            position: absolute;
+            width: 10px;
+            height: 100%;
+            left: 50%;
+            margin-left: -6px;
+            z-index:-1;
+            background-image:linear-gradient(180deg, #ffc107 0%, #ffc107 100%);
         }
-     </style>
+    </style>
 </head>
 <body>
 <header>
@@ -32,294 +31,531 @@
 </header>
 <main role="main">
     <section class="container">
-                    <div class="year 2020">
-                        <div class="timeline"></div>
-                <div class="row align-items-center">
-                    <h4 class="btn btn-warning mx-auto"
-                                                        style="width: 200px;">2020</h4></div>
-                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Code contribution via issue forks                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Drupal contributors may now collaborate using git branches and merge requests. Until this day, code collaboration on drupal.org featured uploaded patch files.                        </div>
-                    </div>
-                                                                            <div class="col-6 pt-5">
-                        <h4>Drupal 9.0 released <span
-                                    class="badge bg-primary">9.0</span>                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">The first Drupal release with no new functionality - and that's great! Drupal 8 committed to adding functionality in a backwards compatible manner. Drupal 9 has the same functionality as Drupal 8.9, but without a lot of backward compatibility code. This approach balances easy major version major upgrades with a lean codebase. https://celebratedrupal.org/ centralized our virtual parties, as this happened during the days of Covid.                        </div>
-                    </div>
-                    </div>                            </div>
-                    <div class="year 2017">
-                        <div class="timeline"></div>
-                <div class="row align-items-center">
-                    <h4 class="btn btn-warning mx-auto"
-                                                        style="width: 200px;">2017</h4></div>
-                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Drupal changes backwards compatibility policy after 16 years.                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Drupal was doing Move Fast and Break Things a few years before Facebook. New features were routinely committed to Drupal without backward compatibility. Recognizing its large installed base, Drupal announces that all changes must be backward compatible, and that major version upgrades will be easy forever.                        </div>
-                    </div>
-                    </div>                            </div>
-                    <div class="year 2016">
-                        <div class="timeline"></div>
-                <div class="row align-items-center">
-                    <h4 class="btn btn-warning mx-auto"
-                                                        style="width: 200px;">2016</h4></div>
-                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>PHP 7 is released                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">A major language renewal comes with the new Zend Engine 3 (PHPNG), It’s also twice as fast as the previous PHP 5.6 release.                        </div>
-                    </div>
-                                                                            <div class="col-6 pt-5">
-                        <h4>Cheney-Stauss Unofficial Drupalcon After Party                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Drupal's fun/art side thrives at these late night Drupalcon parties. This year Drupalers chatted among fire throwers and wild art installations at the Intergalactic Krewe of Chewbacchus in New Orleans.                        </div>
-                    </div>
-                    </div>                            </div>
-                    <div class="year 2015">
-                        <div class="timeline"></div>
-                <div class="row align-items-center">
-                    <h4 class="btn btn-warning mx-auto"
-                                                        style="width: 200px;">2015</h4></div>
-                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Drupal 8.0 released <span
-                                    class="badge bg-primary">8.0</span>                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Five years in the making, Drupal 8 embraces objects and declarative configuration. Entity API, Twig, and Accessibility are the talk at the worldwide release parties.                        </div>
-                    </div>
-                                                                            <div class="col-6 pt-5">
-                        <h4>Cache API boosts Drupal 8 performance                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">wimleers and fabianx rescue Drupal 8 performance with an API where Drupal caches rendered content, varying the keys as specified by a developer. Cache tags precisely invalidate related content as edits are submitted.                        </div>
-                    </div>
-                    </div>                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>drupal-project demonstrates how to assemble a codebase via Composer                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">webflo showed the world how to build a Drupal codebase with Composer. Prior to this day some sites assembled code with Drush Make. drupal.org later built upon this work for its Packagist facade and Composer templates.                        </div>
-                    </div>
-                                                                            <div class="col-6 pt-5">
-                        <h4>Drupalcon Prenote.                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">jam & robertDouglass wake us up for an infotainment extravaganza featuring sing-a-longs; bad jokes; Git tutorials, yodelling, use of alphabet, or beer pouring technique. On this day we belted out a Drupal flavored Let it Go from Frozen.                        </div>
-                    </div>
-                    </div>                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Drupal core governance overhaul for project sustainability.                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Drupal had always relied on a single release manager to review and merge core changes. On this day Drupal embraces multiple committer roles and adds a process for adding new committers. In 2020 are about a dozen core committers.                        </div>
-                    </div>
-                    </div>                            </div>
-                    <div class="year 2014">
-                        <div class="timeline"></div>
-                <div class="row align-items-center">
-                    <h4 class="btn btn-warning mx-auto"
-                                                        style="width: 200px;">2014</h4></div>
-                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Australian government standardizes on Drupal.                         </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">govCMS embodies Drupal's popularity with governments all over the world.                        </div>
-                    </div>
-                                                                            <div class="col-6 pt-5">
-                        <h4>SA-CORE-2014-005 - Drupal core - SQL injection                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Many thousands of Drupal sites are compromised by Drupal core's first major security vulnerability.                        </div>
-                    </div>
-                    </div>                            </div>
-                    <div class="year 2013">
-                        <div class="timeline"></div>
-                <div class="row align-items-center">
-                    <h4 class="btn btn-warning mx-auto"
-                                                        style="width: 200px;">2013</h4></div>
-                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Drupal 8 gets semver, minor release scheduling, and beta requirements policy                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Drupal core adopts semantic versioning and a sustainable, predictable minor release schedule.                        </div>
-                    </div>
-                    </div>                            </div>
-                    <div class="year 2012">
-                        <div class="timeline"></div>
-                <div class="row align-items-center">
-                    <h4 class="btn btn-warning mx-auto"
-                                                        style="width: 200px;">2012</h4></div>
-                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Symfony components merged into Drupal                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Crell leads a push to replace Drupal's bootstrap with Symfony flavored request handling. This large change nearly assassinated Drupal 8, but the mighty Drop prevailed                        </div>
-                    </div>
-                    </div>                            </div>
-                    <div class="year 2011">
-                        <div class="timeline"></div>
-                <div class="row align-items-center">
-                    <h4 class="btn btn-warning mx-auto"
-                                                        style="width: 200px;">2011</h4></div>
-                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Drupalcon Trivia Night                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Alan Burke proposes an in-person, team based trivia contest on the last night of Drupalcon Chicago. Drupalers have a jolly time, nobody recalls who wins, and Irish Drupal hosts many more trivia nights.                        </div>
-                    </div>
-                                                                            <div class="col-6 pt-5">
-                        <h4>Drupal celebrates its 10 Anniversary in style                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Drupalcon Chicago culminates in a dinner party at the Field Museum of Natural History. Dining with us in the main hall is Sue, the world's most complete Tyrannosaurus rex. Kudos to Tiffany and George from Palantir for a great Drupalcon and party.                        </div>
-                    </div>
-                    </div>                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Automated testing for Drupal Core and Contrib                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">After 7 years in Contrib, the simpletest module is added in Drupal 7, along with a substantial test suite. [qa.drupal.org](https://qa.drupal.org/) and then [DrupalCI](https://www.drupal.org/drupalorg/docs/drupal-ci) ensure that each patch passes tests before merging. [Drupal Test Traits](https://gitlab.com/weitzman/drupal-test-traits) later brings this framework to client sites.                        </div>
-                    </div>
-                                                                            <div class="col-6 pt-5">
-                        <h4>Drupal 7.0 released <span
-                                    class="badge bg-primary">7.0</span>                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">More than 250 parties in over 90 countries were held to celebrate this great release. Drupal 7 is still the most popular Drupal release, featuring the Seven theme, designed by Mark Boulton and Leisa Reichelt.                        </div>
-                    </div>
-                    </div>                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Core Office Hours and DrupalCon Mentoring                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">xjm and catch begin leading core office hours on IRC 12 hours apart, providing global coverage. This generous spirit soon manifests at DrupalCon Denver as the first Core Mentoring contribution day, where new contributors are guided through their first core issue.                        </div>
-                    </div>
-                    </div>                            </div>
-                    <div class="year 2010">
-                        <div class="timeline"></div>
-                <div class="row align-items-center">
-                    <h4 class="btn btn-warning mx-auto"
-                                                        style="width: 200px;">2010</h4></div>
-                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Drupal development moves from CVS to Git                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">webchick opens a two week discussion assessing bzr and git for our next VCS. Then she reviews the discussion and announces that Git has been chosen. This is how bike sheds are overcome.                        </div>
-                    </div>
-                                                                            <div class="col-6 pt-5">
-                        <h4>Certified to Rock web service launches                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Certified To Rock is a new form of certification built to match the unique nature of the Drupal community. Give back more, and your score rises.                        </div>
-                    </div>
-                    </div>                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Open Atrium distro by Development Seed                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">An early distro, and a shining light in terms of visual design, user experience, and software architecture.                        </div>
-                    </div>
-                    </div>                            </div>
-                    <div class="year 2009">
-                        <div class="timeline"></div>
-                <div class="row align-items-center">
-                    <h4 class="btn btn-warning mx-auto"
-                                                        style="width: 200px;">2009</h4></div>
-                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Pressflow friendly fork adds DB replication and reverse proxy caching                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">David Strauss and collaborators maintain a distribution that helps Drupal scale. Their improvements are later incorporated into Drupal 7.                        </div>
-                    </div>
-                                                                            <div class="col-6 pt-5">
-                        <h4>Drush becomes stand-alone tool with 2.0 release                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Drush is no longer a module, helping it install a site, perform DB backups, etc. Drush becomes Drupal's de facto command line tool.                        </div>
-                    </div>
-                    </div>                            </div>
-                    <div class="year 2008">
-                        <div class="timeline"></div>
-                <div class="row align-items-center">
-                    <h4 class="btn btn-warning mx-auto"
-                                                        style="width: 200px;">2008</h4></div>
-                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Drupal 6.0 released <span
-                                    class="badge bg-primary">6.0</span>                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">This release features a rewritten menu system, and an Update Status module which prompts admins to update their modules, especially after a security release.                        </div>
-                    </div>
-                    </div>                            </div>
-                    <div class="year 2007">
-                        <div class="timeline"></div>
-                <div class="row align-items-center">
-                    <h4 class="btn btn-warning mx-auto"
-                                                        style="width: 200px;">2007</h4></div>
-                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Sun Microsystems bails out drupal.org                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Drupal.org becomes too popular for its home grown web hosting, and starts throwing errors regularly. Sun Microsystems donates its servers and restores stability to our home.                        </div>
-                    </div>
-                                                                            <div class="col-6 pt-5">
-                        <h4>Acquia is announced to the world                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Acquia, a startup by Dries Buytaert and Jay Batson, announces its intention to offer commercial support and hosting for Drupal. Acquia continues to be the largest sponsor of Drupal development, and its largest web hosting platform.                        </div>
-                    </div>
-                    </div>                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Bay Area Drupal Camp (BADCamp) unites Drupalers at UC Berkeley.                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">This large, annual event remains free to this day. Kudos to Jen Lampton for her many years of organizing. Other notable Camps include Design 4 Drupal, Drupal Dev Days, Frontend United, and Midwest Developer Summit                        </div>
-                    </div>
-                                                                            <div class="col-6 pt-5">
-                        <h4>Drupal 5.0 is released <span
-                                    class="badge bg-primary">5.0</span>                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">This release incorporates jQuery, a young open source project. Drupal's support helps jQuery gain attention and then it rises to huge popularity. This release introduces install profiles and a web based installer.                        </div>
-                    </div>
-                    </div>                            </div>
-                    <div class="year 2006">
-                        <div class="timeline"></div>
-                <div class="row align-items-center">
-                    <h4 class="btn btn-warning mx-auto"
-                                                        style="width: 200px;">2006</h4></div>
-                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Views module is released                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Earl Miles introduces Views, a query builder and list builder UI. Along with CCK, these form the early beating heart of Drupal. Views graduates into Drupal core with D8.                        </div>
-                    </div>
-                                                                            <div class="col-6 pt-5">
-                        <h4>Drupal Association formalizes governance and money management.                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Drupal's governance formalizes from BDFL to a non-profit model. Led by Jacob Redding, VZW is initially a money manager only. Drupal VZW transforms into the Drupal Association in 2011 and becomes more prominent in promoting Drupal and runs Drupalcon.                        </div>
-                    </div>
-                    </div>                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Drupal 4.7 is released with a Form API. <span
-                                    class="badge bg-primary">4.7</span>                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">The new Form API by Adrian Rossouw strengthens Drupal's secure-by-default approach. XSS protections, validation of choices, and only processing POST data that was actually on the form.                        </div>
-                    </div>
-                                                                            <div class="col-6 pt-5">
-                        <h4>Content Creation Kit (CCK) by yched and KarenS, adds custom fields to nodes via the Drupal UI.                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">CCK was and is the heart of Drupal's rich content type system. CCK moved into Drupal core in v7, and is now known as the Field API. JonBob led a session about it at very first Drupalcon, and made the first iteration in Flexinode module, which later morphed into CCK.                        </div>
-                    </div>
-                    </div>                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>groups.drupal.org is launched                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Moshe Weitzman introduced this portal for local user groups to have an online rallying place. Groups helped the Drupal community grow tighter, and helped newbies climb its learning curve. Later led by joshk, greggles, and ezra-g.                        </div>
-                    </div>
-                                                                            <div class="col-6 pt-5">
-                        <h4>Lullabot podcast is launched                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">This podcast, founded by Jeff Robbins, still runs today. This marks a growth in the marketing and communication of Drupal.                        </div>
-                    </div>
-                    </div>                            </div>
-                    <div class="year 2005">
-                        <div class="timeline"></div>
-                <div class="row align-items-center">
-                    <h4 class="btn btn-warning mx-auto"
-                                                        style="width: 200px;">2005</h4></div>
-                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>'Building Online Communities' is published                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Robert Douglass authors the first Drupal book, recognizing a growing demand for Drupal education.                        </div>
-                    </div>
-                                                                            <div class="col-6 pt-5">
-                        <h4>Drupal security team is formed                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">This volunteer team is first led by chx. The team dutifully protects Drupal core and all the contrib modules that opt into its coverage. Future leaders would be Heine, greggles, and mlhess.                        </div>
-                    </div>
-                    </div>                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>First Drupalcon held in Antwerp.                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Drupal enthusiasts meet in person for the first time. Amazingly, 45 people fly to Antwerp from all over the globe. Marc Canter (Macromedia founder) and Chris Musssina (later invented the #hashtag) attended. The conference with scheduled presentations [happened at FOSDEM on Feb 26th, 2005](https://www.drupal.org/conference-brussels-2005). [Dries' Album](https://dri.es/album/drupalcon-antwerp-2005/)                        </div>
-                    </div>
-                    </div>                            </div>
-                    <div class="year 2003">
-                        <div class="timeline"></div>
-                <div class="row align-items-center">
-                    <h4 class="btn btn-warning mx-auto"
-                                                        style="width: 200px;">2003</h4></div>
-                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Drupalers build Deanspace, a semi-official presence for USA presidential candidate Howard Dean.                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">This was a milestone in the rise of the Internet for political campaigns and grassroots initiatives. It also kicked off a long love affair between Drupal and non-profits.                        </div>
-                    </div>
-                    </div>                            </div>
-                    <div class="year 2002">
-                        <div class="timeline"></div>
-                <div class="row align-items-center">
-                    <h4 class="btn btn-warning mx-auto"
-                                                        style="width: 200px;">2002</h4></div>
-                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Drupal 4.0 is released, with a new taxonomy module. <span
-                                    class="badge bg-primary">4.0</span>                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Taxonomy module, written by Marco Molinari. Marco wrote it because he needed a way to group forums into categories. Drupal's rich taxonomy system foreshadows what will be popularly known as tags/labels.                        </div>
-                    </div>
-                    </div>                            </div>
-                    <div class="year 2001">
-                        <div class="timeline"></div>
-                <div class="row align-items-center">
-                    <h4 class="btn btn-warning mx-auto"
-                                                        style="width: 200px;">2001</h4></div>
-                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Drupal 3.0 is released. <span
-                                    class="badge bg-primary">3.0</span>                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">3.0 major had a whopping 6 month development cycle. Nodes are introduced as a building block for content. They can be specialized into many content types.                        </div>
-                    </div>
-                                                                            <div class="col-6 pt-5">
-                        <h4>Druplicon is introduced                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Drupal's famous logo, featuring infinity eyes and remixed into thousands of variants, is introduced by Steven Wittens and Kristjan Jansen.                        </div>
-                    </div>
-                    </div>                                     <div class="row gx-5 gy-5">                    <div class="col-6 ">
-                        <h4>Drupal 2.0 is released <span
-                                    class="badge bg-primary">2.0</span>                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">A mere 2 months after 1.0, Drupal ships 2.0. Backward compatibility was not yet a concern. The translation system is introduced, with its brilliantly simple t() function.                        </div>
-                    </div>
-                                                                            <div class="col-6 pt-5">
-                        <h4>Drupal 1.0 is released <span
-                                    class="badge bg-primary">1.0</span>                        </h4>
-                        <div class="shadow p-3 mb-5 border bg-light shadow-md">Dries Buytaert shares the initial release of his 'dormitory bulletin board'. It includes 18 files that are called modules. It features a hook system where modules interact with each other and the core framework. On this very day, Wikipedia is also born. Had that happened 6 months later, it would probably be a Drupal site!.                        </div>
-                    </div>
-                    </div>                            </div>
+                <div class="year 2020">
+            <div class="timeline"></div>
+            <div class="row align-items-center">
+                <h4 class="btn btn-warning mx-auto" style="width: 200px;">2020</h4>
+            </div>
+                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Code contribution via issue forks</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Drupal contributors may now collaborate using git branches and merge requests. Until this day, code collaboration on drupal.org featured uploaded patch files.</p>
+
+                </div>
+            </div>
+                                                    <div class="col-6">
+                <h4><p>Drupal 9.0 released</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>The first Drupal release with no new functionality - and that's great! Drupal 8 committed to adding functionality in a backwards compatible manner. Drupal 9 has the same functionality as Drupal 8.9, but without a lot of backward compatibility code. This approach balances easy major version major upgrades with a lean codebase. https://celebratedrupal.org/ centralized our virtual parties, as this happened during the days of Covid.</p>
+
+                </div>
+            </div>
+                </div>                    </div>
+                <div class="year 2017">
+            <div class="timeline"></div>
+            <div class="row align-items-center">
+                <h4 class="btn btn-warning mx-auto" style="width: 200px;">2017</h4>
+            </div>
+                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Drupal changes backwards compatibility policy after 16 years.</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Drupal was doing Move Fast and Break Things a few years before Facebook. New features were routinely committed to Drupal without backward compatibility. Recognizing its large installed base, Drupal announces that all changes must be backward compatible, and that major version upgrades will be easy forever.</p>
+
+                </div>
+            </div>
+                </div>                    </div>
+                <div class="year 2016">
+            <div class="timeline"></div>
+            <div class="row align-items-center">
+                <h4 class="btn btn-warning mx-auto" style="width: 200px;">2016</h4>
+            </div>
+                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>PHP 7 is released</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>A major language renewal comes with the new Zend Engine 3 (PHPNG), It’s also twice as fast as the previous PHP 5.6 release.</p>
+
+                </div>
+            </div>
+                                                    <div class="col-6">
+                <h4><p>Cheney-Stauss Unofficial Drupalcon After Party</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Drupal's fun/art side thrives at these late night Drupalcon parties. This year Drupalers chatted among fire throwers and wild art installations at the Intergalactic Krewe of Chewbacchus in New Orleans.</p>
+
+                </div>
+            </div>
+                </div>                    </div>
+                <div class="year 2015">
+            <div class="timeline"></div>
+            <div class="row align-items-center">
+                <h4 class="btn btn-warning mx-auto" style="width: 200px;">2015</h4>
+            </div>
+                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Drupal 8.0 released</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Five years in the making, Drupal 8 embraces objects and declarative configuration. Entity API, Twig, and Accessibility are the talk at the worldwide release parties.</p>
+
+                </div>
+            </div>
+                                                    <div class="col-6">
+                <h4><p>Cache API boosts Drupal 8 performance</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>wimleers and fabianx rescue Drupal 8 performance with an API where Drupal caches rendered content, varying the keys as specified by a developer. Cache tags precisely invalidate related content as edits are submitted.</p>
+
+                </div>
+            </div>
+                </div>                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>drupal-project demonstrates how to assemble a codebase via Composer</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>webflo showed the world how to build a Drupal codebase with Composer. Prior to this day some sites assembled code with Drush Make. drupal.org later built upon this work for its Packagist facade and Composer templates.</p>
+
+                </div>
+            </div>
+                                                    <div class="col-6">
+                <h4><p>Drupalcon Prenote.</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>jam &amp; robertDouglass wake us up for an infotainment extravaganza featuring sing-a-longs; bad jokes; Git tutorials, yodelling, use of alphabet, or beer pouring technique. On this day we belted out a Drupal flavored Let it Go from Frozen.</p>
+
+                </div>
+            </div>
+                </div>                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Drupal core governance overhaul for project sustainability.</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Drupal had always relied on a single release manager to review and merge core changes. On this day Drupal embraces multiple committer roles and adds a process for adding new committers. In 2020 are about a dozen core committers.</p>
+
+                </div>
+            </div>
+                </div>                    </div>
+                <div class="year 2014">
+            <div class="timeline"></div>
+            <div class="row align-items-center">
+                <h4 class="btn btn-warning mx-auto" style="width: 200px;">2014</h4>
+            </div>
+                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Australian government standardizes on Drupal.</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>govCMS embodies Drupal's popularity with governments all over the world.</p>
+
+                </div>
+            </div>
+                                                    <div class="col-6">
+                <h4><p>SA-CORE-2014-005 - Drupal core - SQL injection</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Many thousands of Drupal sites are compromised by Drupal core's first major security vulnerability.</p>
+
+                </div>
+            </div>
+                </div>                    </div>
+                <div class="year 2013">
+            <div class="timeline"></div>
+            <div class="row align-items-center">
+                <h4 class="btn btn-warning mx-auto" style="width: 200px;">2013</h4>
+            </div>
+                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Drupal 8 gets semver, minor release scheduling, and beta requirements policy</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Drupal core adopts semantic versioning and a sustainable, predictable minor release schedule.</p>
+
+                </div>
+            </div>
+                </div>                    </div>
+                <div class="year 2012">
+            <div class="timeline"></div>
+            <div class="row align-items-center">
+                <h4 class="btn btn-warning mx-auto" style="width: 200px;">2012</h4>
+            </div>
+                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Symfony components merged into Drupal</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Crell leads a push to replace Drupal's bootstrap with Symfony flavored request handling. This large change nearly assassinated Drupal 8, but the mighty Drop prevailed</p>
+
+                </div>
+            </div>
+                </div>                    </div>
+                <div class="year 2011">
+            <div class="timeline"></div>
+            <div class="row align-items-center">
+                <h4 class="btn btn-warning mx-auto" style="width: 200px;">2011</h4>
+            </div>
+                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Drupalcon Trivia Night</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Alan Burke proposes an in-person, team based trivia contest on the last night of Drupalcon Chicago. Drupalers have a jolly time, nobody recalls who wins, and Irish Drupal hosts many more trivia nights.</p>
+
+                </div>
+            </div>
+                                                    <div class="col-6">
+                <h4><p>Drupal celebrates its 10 Anniversary in style</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Drupalcon Chicago culminates in a dinner party at the Field Museum of Natural History. Dining with us in the main hall is Sue, the world's most complete Tyrannosaurus rex. Kudos to Tiffany and George from Palantir for a great Drupalcon and party.</p>
+
+                </div>
+            </div>
+                </div>                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Automated testing for Drupal Core and Contrib</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>After 7 years in Contrib, the simpletest module is added in Drupal 7, along with a substantial test suite. <a href="https://qa.drupal.org/">qa.drupal.org</a> and then <a href="https://www.drupal.org/drupalorg/docs/drupal-ci">DrupalCI</a> ensure that each patch passes tests before merging. <a href="https://gitlab.com/weitzman/drupal-test-traits">Drupal Test Traits</a> later brings this framework to client sites.</p>
+
+                </div>
+            </div>
+                                                    <div class="col-6">
+                <h4><p>Drupal 7.0 released</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>More than 250 parties in over 90 countries were held to celebrate this great release. Drupal 7 is still the most popular Drupal release, featuring the Seven theme, designed by Mark Boulton and Leisa Reichelt.</p>
+
+                </div>
+            </div>
+                </div>                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Core Office Hours and DrupalCon Mentoring</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>xjm and catch begin leading core office hours on IRC 12 hours apart, providing global coverage. This generous spirit soon manifests at DrupalCon Denver as the first Core Mentoring contribution day, where new contributors are guided through their first core issue.</p>
+
+                </div>
+            </div>
+                </div>                    </div>
+                <div class="year 2010">
+            <div class="timeline"></div>
+            <div class="row align-items-center">
+                <h4 class="btn btn-warning mx-auto" style="width: 200px;">2010</h4>
+            </div>
+                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Drupal development moves from CVS to Git</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>webchick opens a two week discussion assessing bzr and git for our next VCS. Then she reviews the discussion and announces that Git has been chosen. This is how bike sheds are overcome.</p>
+
+                </div>
+            </div>
+                                                    <div class="col-6">
+                <h4><p>Certified to Rock web service launches</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Certified To Rock is a new form of certification built to match the unique nature of the Drupal community. Give back more, and your score rises.</p>
+
+                </div>
+            </div>
+                </div>                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Open Atrium distro by Development Seed</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>An early distro, and a shining light in terms of visual design, user experience, and software architecture.</p>
+
+                </div>
+            </div>
+                </div>                    </div>
+                <div class="year 2009">
+            <div class="timeline"></div>
+            <div class="row align-items-center">
+                <h4 class="btn btn-warning mx-auto" style="width: 200px;">2009</h4>
+            </div>
+                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Pressflow friendly fork adds DB replication and reverse proxy caching</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>David Strauss and collaborators maintain a distribution that helps Drupal scale. Their improvements are later incorporated into Drupal 7.</p>
+
+                </div>
+            </div>
+                                                    <div class="col-6">
+                <h4><p>Drush becomes stand-alone tool with 2.0 release</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Drush is no longer a module, helping it install a site, perform DB backups, etc. Drush becomes Drupal's de facto command line tool.</p>
+
+                </div>
+            </div>
+                </div>                    </div>
+                <div class="year 2008">
+            <div class="timeline"></div>
+            <div class="row align-items-center">
+                <h4 class="btn btn-warning mx-auto" style="width: 200px;">2008</h4>
+            </div>
+                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Drupal 6.0 released</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>This release features a rewritten menu system, and an Update Status module which prompts admins to update their modules, especially after a security release.</p>
+
+                </div>
+            </div>
+                </div>                    </div>
+                <div class="year 2007">
+            <div class="timeline"></div>
+            <div class="row align-items-center">
+                <h4 class="btn btn-warning mx-auto" style="width: 200px;">2007</h4>
+            </div>
+                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Sun Microsystems bails out drupal.org</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Drupal.org becomes too popular for its home grown web hosting, and starts throwing errors regularly. Sun Microsystems donates its servers and restores stability to our home.</p>
+
+                </div>
+            </div>
+                                                    <div class="col-6">
+                <h4><p>Acquia is announced to the world</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Acquia, a startup by Dries Buytaert and Jay Batson, announces its intention to offer commercial support and hosting for Drupal. Acquia continues to be the largest sponsor of Drupal development, and its largest web hosting platform.</p>
+
+                </div>
+            </div>
+                </div>                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Bay Area Drupal Camp (BADCamp) unites Drupalers at UC Berkeley.</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>This large, annual event remains free to this day. Kudos to Jen Lampton for her many years of organizing. Other notable Camps include Design 4 Drupal, Drupal Dev Days, Frontend United, and Midwest Developer Summit</p>
+
+                </div>
+            </div>
+                                                    <div class="col-6">
+                <h4><p>Drupal 5.0 is released</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>This release incorporates jQuery, a young open source project. Drupal's support helps jQuery gain attention and then it rises to huge popularity. This release introduces install profiles and a web based installer.</p>
+
+                </div>
+            </div>
+                </div>                    </div>
+                <div class="year 2006">
+            <div class="timeline"></div>
+            <div class="row align-items-center">
+                <h4 class="btn btn-warning mx-auto" style="width: 200px;">2006</h4>
+            </div>
+                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Views module is released</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Earl Miles introduces Views, a query builder and list builder UI. Along with CCK, these form the early beating heart of Drupal. Views graduates into Drupal core with D8.</p>
+
+                </div>
+            </div>
+                                                    <div class="col-6">
+                <h4><p>Drupal Association formalizes governance and money management.</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Drupal's governance formalizes from BDFL to a non-profit model. Led by Jacob Redding, VZW is initially a money manager only. Drupal VZW transforms into the Drupal Association in 2011 and becomes more prominent in promoting Drupal and runs Drupalcon.</p>
+
+                </div>
+            </div>
+                </div>                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Drupal 4.7 is released with a Form API.</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>The new Form API by Adrian Rossouw strengthens Drupal's secure-by-default approach. XSS protections, validation of choices, and only processing POST data that was actually on the form.</p>
+
+                </div>
+            </div>
+                                                    <div class="col-6">
+                <h4><p>Content Creation Kit (CCK) by yched and KarenS, adds custom fields to nodes via the Drupal UI.</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>CCK was and is the heart of Drupal's rich content type system. CCK moved into Drupal core in v7, and is now known as the Field API. JonBob led a session about it at very first Drupalcon, and made the first iteration in Flexinode module, which later morphed into CCK.</p>
+
+                </div>
+            </div>
+                </div>                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>groups.drupal.org is launched</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Moshe Weitzman introduced this portal for local user groups to have an online rallying place. Groups helped the Drupal community grow tighter, and helped newbies climb its learning curve. Later led by joshk, greggles, and ezra-g.</p>
+
+                </div>
+            </div>
+                                                    <div class="col-6">
+                <h4><p>Lullabot podcast is launched</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>This podcast, founded by Jeff Robbins, still runs today. This marks a growth in the marketing and communication of Drupal.</p>
+
+                </div>
+            </div>
+                </div>                    </div>
+                <div class="year 2005">
+            <div class="timeline"></div>
+            <div class="row align-items-center">
+                <h4 class="btn btn-warning mx-auto" style="width: 200px;">2005</h4>
+            </div>
+                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>'Building Online Communities' is published</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Robert Douglass authors the first Drupal book, recognizing a growing demand for Drupal education.</p>
+
+                </div>
+            </div>
+                                                    <div class="col-6">
+                <h4><p>Drupal security team is formed</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>This volunteer team is first led by chx. The team dutifully protects Drupal core and all the contrib modules that opt into its coverage. Future leaders would be Heine, greggles, and mlhess.</p>
+
+                </div>
+            </div>
+                </div>                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>First Drupalcon held in Antwerp.</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Drupal enthusiasts meet in person for the first time. Amazingly, 45 people fly to Antwerp from all over the globe. Marc Canter (Macromedia founder) and Chris Musssina (later invented the #hashtag) attended. The conference with scheduled presentations <a href="https://www.drupal.org/conference-brussels-2005">happened at FOSDEM on Feb 26th, 2005</a>. <a href="https://dri.es/album/drupalcon-antwerp-2005/">Dries' Album</a></p>
+
+                </div>
+            </div>
+                </div>                    </div>
+                <div class="year 2003">
+            <div class="timeline"></div>
+            <div class="row align-items-center">
+                <h4 class="btn btn-warning mx-auto" style="width: 200px;">2003</h4>
+            </div>
+                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Drupalers build Deanspace, a semi-official presence for USA presidential candidate Howard Dean.</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>This was a milestone in the rise of the Internet for political campaigns and grassroots initiatives. It also kicked off a long love affair between Drupal and non-profits.</p>
+
+                </div>
+            </div>
+                </div>                    </div>
+                <div class="year 2002">
+            <div class="timeline"></div>
+            <div class="row align-items-center">
+                <h4 class="btn btn-warning mx-auto" style="width: 200px;">2002</h4>
+            </div>
+                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Drupal 4.0 is released, with a new taxonomy module.</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Taxonomy module, written by Marco Molinari. Marco wrote it because he needed a way to group forums into categories. Drupal's rich taxonomy system foreshadows what will be popularly known as tags/labels.</p>
+
+                </div>
+            </div>
+                </div>                    </div>
+                <div class="year 2001">
+            <div class="timeline"></div>
+            <div class="row align-items-center">
+                <h4 class="btn btn-warning mx-auto" style="width: 200px;">2001</h4>
+            </div>
+                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Drupal 3.0 is released.</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>3.0 major had a whopping 6 month development cycle. Nodes are introduced as a building block for content. They can be specialized into many content types.</p>
+
+                </div>
+            </div>
+                                                    <div class="col-6">
+                <h4><p>Druplicon is introduced</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Drupal's famous logo, featuring infinity eyes and remixed into thousands of variants, is introduced by Steven Wittens and Kristjan Jansen.</p>
+
+                </div>
+            </div>
+                </div>                                        <div class="row gx-5 gy-5">
+                        <div class="col-6 pt-5">
+                <h4><p>Drupal 2.0 is released</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>A mere 2 months after 1.0, Drupal ships 2.0. Backward compatibility was not yet a concern. The translation system is introduced, with its brilliantly simple t() function.</p>
+
+                </div>
+            </div>
+                                                    <div class="col-6">
+                <h4><p>Drupal 1.0 is released</p>
+
+                                    </h4>
+                <div class="shadow p-3 mb-5 border bg-light shadow-md">
+                    <p>Dries Buytaert shares the initial release of his 'dormitory bulletin board'. It includes 18 files that are called modules. It features a hook system where modules interact with each other and the core framework. On this very day, Wikipedia is also born. Had that happened 6 months later, it would probably be a Drupal site!.</p>
+
+                </div>
+            </div>
+                </div>                    </div>
             </section>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -327,4 +563,3 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
-

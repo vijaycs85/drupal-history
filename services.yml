@@ -1,0 +1,10 @@
+services:
+  client:
+    class: Vijaycs85\Drupal\History\Client
+    arguments: ['@http_client', '@markdown_converter', '@renderer']
+  renderer:
+    class: Vijaycs85\Drupal\History\Renderer
+  http_client:
+    class: GuzzleHttp\Client
+  markdown_converter:
+    class: League\CommonMark\CommonMarkConverter
