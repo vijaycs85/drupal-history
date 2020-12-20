@@ -1,0 +1,77 @@
+body {
+    font-family: 'Ubuntu',sans-serif
+}
+
+nav.bg-blue {
+    background-color: #0678be;
+}
+.nav-item {
+
+}
+.year {
+    position: relative;
+}
+.timeline {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    z-index:-1;
+    background-color:gainsboro
+
+}
+h4.btn {
+    border: 2px solid #DDD;
+    background: whitesmoke;
+    width: 4rem;
+    border-radius: 50%;
+    height: 4rem;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+.submitted time {
+    border-bottom: 1px dotted;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.submitted {
+    font-style: italic;
+}
+.permalink {
+    font-weight:normal;
+    font-style:normal;
+    text-decoration: none;
+    color: #4e4e4e;
+}
+a.permalink:hover, a.permalink:focus{
+    color:#0678be;
+    text-decoration: underline;
+}
+blockquote {
+    margin: 0 0 0 1em;
+    padding-left: 30px;
+}
+blockquote:before {
+    color: rgb(6, 120, 190);
+    content: "\201C";
+    float: left;
+    font-size: 3em;
+    margin: 0 0 0 -0.6em;
+}
+
+a.picture {
+    width: 40px;
+    float: left;
+}
+.picture img {
+    display: block;
+    border-radius: 50%;
+}
+.item-card {
+    margin-left: 90px;
+}
+@media (max-width: 991.98px) {
+    div.description {
+        display: none;
+    }
+}

@@ -19,7 +19,8 @@
     }
   },
   "scripts": {
-    "build": "php app.php > docs/index.html"
+    "build": "php app.php > docs/index.html",
+    "dev": "php app.php --debug"
   },
   "authors": [
     {
