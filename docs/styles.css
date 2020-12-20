@@ -8,6 +8,17 @@ nav.bg-blue {
 .nav-item {
 
 }
+h1, h2 {
+    color: #064771;
+    display: block;
+}
+hr {
+    margin: 0;
+}
+.content {
+    color: #222222;
+    font-size: 1rem;
+}
 .year {
     position: relative;
 }
@@ -15,7 +26,7 @@ nav.bg-blue {
     position: absolute;
     width: 2px;
     height: 100%;
-    left: 50%;
+    left: 2.2rem;
     z-index:-1;
     background-color:gainsboro
 
@@ -23,9 +34,9 @@ nav.bg-blue {
 h4.btn {
     border: 2px solid #DDD;
     background: whitesmoke;
-    width: 4rem;
+    width: 4.5rem;
     border-radius: 50%;
-    height: 4rem;
+    height: 4.5rem;
     padding-top: 1rem;
     font-weight: bold;
 }
@@ -64,10 +75,12 @@ a.picture {
     float: left;
 }
 .picture img {
+    background: #FFF;
     display: block;
     border-radius: 50%;
 }
-.item-card {
+
+.item-card-desc {
     margin-left: 90px;
 }
 @media (max-width: 991.98px) {

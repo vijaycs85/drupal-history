@@ -36,43 +36,39 @@
     </nav>
 </header>
 <main role="main">
-    <section class="container mt-5">
+    <section class="container my-5">
+        <h1>Celebrating 20 years of Drupal</h1>
+        <div class="content">
+            <p>Notable events in Drupal's history.</p>
+        </div>
+    </section>
+    <section class="container">
+        <h2 class="title">Timeline</h2>
         {%  for year, items in data %}
         <div class="year {{ year }}">
             <div class="timeline"></div>
-            <div class="row align-items-center">
-                <h4 class="btn mx-auto">{{ year }}</h4>
+            <div class="item-year pt-5">
+                <h4 class="btn">{{ year }}</h4>
             </div>
             {%  for delta, item in items %}
-            {% if delta % 2 == 0 %}<div class="row gx-5 gy-5">{% endif %}
-            <div class="col-6{% if delta % 2 == 0 %} pt-5{% endif %}">
+            <div class="item-card py-5">
                 <a href="#" title="View user profile." class="picture">
                     <img src="{{ img_path }}/{{ item.thumbnail }}" width="80" height="80" alt="profile picture">
                 </a>
-                <div class="item-card">
+                <div class="item-card-desc">
                     <h4 class="item-title">
-                        <a href="{{ item.href }}" {{ item.href == "#" ? "" : 'target="_blank"' }} class="permalink">{{ item.title|raw }}</a>{% if item.version %} <span class="badge bg-primary">{{ item.version }}</span>{% endif %}
+                        <a href="{{ item.href }}" {{ item.href == "#" ? 'class="permalink"' : 'class="permalink" target="_blank" ' }}>{{ item.title|raw }}</a>{% if item.version %} <span class="badge bg-primary">{{ item.version }}</span>{% endif %}
                     </h4>
                 <div class="submitted">
                     on <time datetime="{{ item.date }}" data-created-date="{{ item.date is empty ? "" :  item.date|date("d M Y \\a\\t m:i") }}">{{ item.date|date("d M Y \\a\\t m:i") }}</time>
                 </div>
-                <div class="description shadow p-3 mb-5 border bg-light shadow-md"><blockquote>{{ item.description|raw }}</blockquote></div>
+                <div class="description shadow p-3 border bg-light shadow-md"><blockquote>{{ item.description|raw }}</blockquote></div>
                 </div>
             </div>
-            {% if delta % 2 == 1 or (items|length %2 ==1 and delta == items|length - 1) %}</div>{% endif %}
+                <hr class="mx-5" />
             {% endfor %}
         </div>
         {% endfor %}
-    </section>
-    <section class="container">
-        <div class="row justify-content-around">
-            <div class="col-3">
-                <figure class="figure">
-                    <img src="{{ img_path }}/origin.jpg" class="figure-img img-fluid rounded" alt="" />
-                    <figcaption class="figure-caption text-start">Credit: https://dri.es</figcaption>
-                </figure>
-            </div>
-        </div>
     </section>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
