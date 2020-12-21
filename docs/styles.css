@@ -1,7 +1,14 @@
 body {
     font-family: 'Ubuntu',sans-serif
 }
-
+a, a:visited, a:active {
+    color: #0678be;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #0678be;
+    text-decoration: underline;
+}
 nav.bg-blue {
     background-color: #0678be;
 }

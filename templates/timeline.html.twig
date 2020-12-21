@@ -51,18 +51,24 @@
                 <h4 class="btn">{{ year }}</h4>
             </div>
             {%  for delta, item in items %}
-            <div class="item-card py-5">
+            <div class="item-card py-5" id="timeline-{{ item.hash }}">
                 <a href="#" title="View user profile." class="picture">
                     <img src="{{ img_path }}/{{ item.thumbnail }}" width="80" height="80" alt="profile picture">
                 </a>
                 <div class="item-card-desc">
                     <h4 class="item-title">
-                        <a href="{{ item.href }}" {{ item.href == "#" ? 'class="permalink"' : 'class="permalink" target="_blank" ' }}>{{ item.title|raw }}</a>{% if item.version %} <span class="badge bg-primary">{{ item.version }}</span>{% endif %}
+                        <a href="#timeline-{{ item.hash }}" class="permalink">{{ item.title|raw }}</a>{% if item.version %} <span class="badge bg-primary">{{ item.version }}</span>{% endif %}
                     </h4>
                 <div class="submitted">
-                    on <time datetime="{{ item.date }}" data-created-date="{{ item.date is empty ? "" :  item.date|date("d M Y \\a\\t m:i") }}">{{ item.date|date("d M Y \\a\\t m:i") }}</time>
+                    on <time datetime="{{ item.date }}" data-created-date="{{ item.date is empty ? "" :  item.date|date("d M Y \\a\\t m:i") }}">{{ item.date|date("d M Y") }}</time>
                 </div>
-                <div class="description shadow p-3 border bg-light shadow-md"><blockquote>{{ item.description|raw }}</blockquote></div>
+{#                    <div class="description shadow p-3 border bg-light shadow-md"><blockquote>{{ item.description|raw }}</blockquote></div>#}
+                <div class="description p-3 bg-light"><blockquote>{{ item.description|raw }}</blockquote></div>
+                    {% if item.href is not empty %}
+                        <div class="links text-end">
+                            <a href="{{ item.href }}" target="_blank">Read more...</a>
+                        </div>
+                    {% endif %}
                 </div>
             </div>
                 <hr class="mx-5" />

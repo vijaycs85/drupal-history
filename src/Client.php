@@ -27,11 +27,9 @@ class Client {
         $content = $this->getContent();
         foreach ($content as $delta => $item) {
             $date = DateTime::createFromFormat(DateTimeInterface::ATOM, $item->date);
+            $item->hash = crc32($item->title);
             $item->version = $this->getVersion($item->title);
             $item->thumbnail = $this->getThumbnail($item);
-            if (!$item->href) {
-                $item->href = '#';
-            }
             foreach (['description'] as $property)  {
                 $item->{$property} = $this->markdownConverter->convertToHtml($item->{$property});
             }
