@@ -11,6 +11,9 @@ class Client {
     const API_GH_ENDPOINT = 'https://github.com/weitzman/drupal-timeline/raw/main/drupal-timeline.json';
     const API_CDN_ENDPOINT = 'https://cdn.jsdelivr.net/gh/weitzman/drupal-timeline/drupal-timeline.json';
 
+    const DRUPAL_ORG_BASE_PATH = 'https://www.drupal.org/';
+    const GITHUB_COM_BASE_PATH = 'https://www.github.com/';
+
     protected $httpClient;
 
     protected $markdownConverter;
@@ -28,6 +31,7 @@ class Client {
         foreach ($content as $delta => $item) {
             $date = DateTime::createFromFormat(DateTimeInterface::ATOM, $item->date);
             $item->hash = crc32($item->title);
+            $item->profileUrl = is_string($item->username) ? $this->getProfileUrl($item->username) : NULL;
             $item->version = $this->getVersion($item->title);
             foreach (['description'] as $property)  {
                 $item->{$property} = $this->markdownConverter->convertToHtml($item->{$property});
@@ -45,7 +49,7 @@ class Client {
     protected function getContent() {
         $data_filename  = __DIR__ . '/../data/drupal-timeline.json';
         // For now, serving from local file.
-        return json_decode(file_get_contents($data_filename));
+        // return json_decode(file_get_contents($data_filename));
 
         $response = $this->httpClient->request('GET', self::API_GH_ENDPOINT);
         if ($response->getStatusCode() !== 200) {
@@ -65,6 +69,19 @@ class Client {
     protected function getVersion($title) {
         preg_match('/^Drupal\s([0-9]\.[0-9]+)/s', $title, $matches);
         return isset($matches[1]) ? $matches[1] : NULL;
+    }
+
+    /**
+     * Gets URL from username.
+     *
+     * @param  string  $username
+     *   The user name.
+     *
+     * @return string
+     *   Fully qualified URL.
+     */
+    protected function getProfileUrl(string $username) {
+        return self::DRUPAL_ORG_BASE_PATH . 'u/' . $username;
     }
 
     public function debugOn() {

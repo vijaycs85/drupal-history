@@ -46,8 +46,8 @@
             </div>
             {%  for delta, item in items %}
             <div class="item-card py-5" id="timeline-{{ item.hash }}">
-                <a href="#" title="View user profile." class="picture">
-                    <img src="{{ item.thumbnail is empty ? img_path ~ '/default.png' : item.thumbnail }}" width="80" height="80" alt="profile picture">
+                <a href="{{ item.username is empty ? '#timeline-' ~ item.hash : item.profileUrl }}" title="View user profile." class="picture" target="{{ item.profileUrl is empty ? '_self' : '_blank' }}">
+                    <img src="{{ item.avatar is empty ? img_path ~ '/default.png' : item.avatar }}" width="80" height="80" alt="profile picture">
                 </a>
                 <div class="item-card-desc">
                     <h4 class="item-title">
