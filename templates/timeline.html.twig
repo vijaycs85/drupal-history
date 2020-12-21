@@ -30,45 +30,62 @@
 </header>
 <main role="main" class="container">
     <section class="row my-5">
-        <h1>Celebrating 20 years of Drupal</h1>
-        <div class="content">
-            <p>Notable events in Drupal's history.</p>
-        </div>
+        <h1 class="pb-3">Celebrating 20 years of Drupal</h1>
     </section>
     <section class="row">
         <div class="col-8">
-        <h2 class="title">Timeline</h2>
-        {%  for year, items in data %}
-        <div class="year {{ year }}">
-            <div class="timeline"></div>
-            <div class="item-year pt-5">
-                <h4 class="btn">{{ year }}</h4>
+            <div class="content">
+                <h3 class="fs-4" id="summary-problem-motivation">Problem/Motivation</h3>
+                <p>Notable events in Drupal's history.</p>
+                <h3 class="fs-4" id="summary-proposed-resolution">Proposed resolution</h3>
+                <p>TBC</p>
+                <h3  class="fs-5" id="summary-remaining-tasks">Remaining tasks</h3>
+                <p>TBC</p>
+                <h3 class="fs-5" id="summary-ui-changes">User interface changes</h3>
+                <p>TBC</p>
+                <h3 class="fs-5" id="summary-api-changes">API changes</h3>
+                <p>TBC</p>
+                <h3 class="fs-5" id="summary-data-model-changes">Data model changes</h3>
+                <p>TBC</p>
             </div>
-            {%  for delta, item in items %}
-            <div class="item-card py-5" id="timeline-{{ item.hash }}">
-                <a href="{{ item.username is empty ? '#timeline-' ~ item.hash : item.profileUrl }}" title="View user profile." class="picture" target="{{ item.profileUrl is empty ? '_self' : '_blank' }}">
-                    <img src="{{ item.avatar is empty ? img_path ~ '/default.png' : item.avatar }}" width="80" height="80" alt="profile picture">
-                </a>
-                <div class="item-card-desc">
-                    <h4 class="item-title">
-                        <a href="#timeline-{{ item.hash }}" class="permalink">{{ item.title|raw }}</a>{% if item.version %} <span class="badge bg-primary">{{ item.version }}</span>{% endif %}
-                    </h4>
-                <div class="submitted">
-                    on <time datetime="{{ item.date }}" data-created-date="{{ item.date is empty ? "" :  item.date|date("d M Y \\a\\t m:i") }}">{{ item.date|date("d M Y") }}</time>
-                </div>
-{#                    <div class="description shadow p-3 border bg-light shadow-md"><blockquote>{{ item.description|raw }}</blockquote></div>#}
-                <div class="description p-3 bg-light"><blockquote>{{ item.description|raw }}</blockquote></div>
-                    {% if item.href is not empty %}
-                        <div class="links text-end">
-                            <a href="{{ item.href }}" target="_blank">Read more...</a>
+            <h2 class="fs-4" class="title">Timeline</h2>
+            {%  for year, items in data %}
+                <div class="year {{ year }}">
+                    <div class="timeline"></div>
+                    <div class="item-year pt-5">
+                        <h4 class="btn">{{ year }}</h4>
+                    </div>
+                    {%  for delta, item in items %}
+                        <div class="item-card py-5" id="timeline-{{ item.hash }}">
+                            <a href="{{ item.username is empty ? '#timeline-' ~ item.hash : item.profileUrl }}" title="View user profile." class="picture" target="{{ item.profileUrl is empty ? '_self' : '_blank' }}">
+                                <img src="{{ item.avatar is empty ? img_path ~ '/default.png' : item.avatar }}" width="80" height="80" alt="profile picture">
+                            </a>
+                            <div class="item-card-desc">
+                                <h4 class="item-title">
+                                    <a href="#timeline-{{ item.hash }}" class="permalink">{{ item.title|raw }}</a>{% if item.version %} <span class="badge bg-primary">{{ item.version }}</span>{% endif %}
+                                </h4>
+                                <div class="submitted">
+                                    by
+                                    {% if item.username is empty %}
+                                        Anonymous
+                                    {% else %}
+                                        <a href="{{ item.profileUrl }}" title="View user profile." target="_blank">{{ item.username }}</a>
+                                    {% endif %}
+                                    on <time datetime="{{ item.date }}" data-created-date="{{ item.date is empty ? "" :  item.date|date("d M Y \\a\\t m:i") }}">{{ item.date|date("d M Y") }}</time>
+                                </div>
+                                {#                    <div class="description shadow p-3 border bg-light shadow-md"><blockquote>{{ item.description|raw }}</blockquote></div>#}
+                                <div class="description p-3 bg-light"><blockquote>{{ item.description|raw }}</blockquote></div>
+                                {% if item.href is not empty %}
+                                    <div class="links text-end">
+                                        <a href="{{ item.href }}" target="_blank">Read more...</a>
+                                    </div>
+                                {% endif %}
+                            </div>
                         </div>
-                    {% endif %}
+                        <hr class="mx-5" />
+                    {% endfor %}
                 </div>
-            </div>
-                <hr class="mx-5" />
             {% endfor %}
-        </div>
-        {% endfor %}
         </div>
         <div class="col-4">
             {% include 'tweets.html.twig' only %}
