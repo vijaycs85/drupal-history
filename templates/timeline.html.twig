@@ -28,14 +28,15 @@
         </div>
     </nav>
 </header>
-<main role="main">
-    <section class="container my-5">
+<main role="main" class="container">
+    <section class="row my-5">
         <h1>Celebrating 20 years of Drupal</h1>
         <div class="content">
             <p>Notable events in Drupal's history.</p>
         </div>
     </section>
-    <section class="container">
+    <section class="row">
+        <div class="col-8">
         <h2 class="title">Timeline</h2>
         {%  for year, items in data %}
         <div class="year {{ year }}">
@@ -68,6 +69,10 @@
             {% endfor %}
         </div>
         {% endfor %}
+        </div>
+        <div class="col-4">
+            {% include 'tweets.html.twig' only %}
+        </div>
     </section>
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

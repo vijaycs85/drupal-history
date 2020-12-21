@@ -90,6 +90,14 @@ a.picture {
 .item-card-desc {
     margin-left: 90px;
 }
+
+.block {
+    background: whitesmoke;
+}
+.block h2 {
+    padding: 1rem;
+}
+
 @media (max-width: 991.98px) {
     div.description {
         display: none;
