@@ -47,7 +47,7 @@
             {%  for delta, item in items %}
             <div class="item-card py-5" id="timeline-{{ item.hash }}">
                 <a href="#" title="View user profile." class="picture">
-                    <img src="{{ img_path }}/{{ item.thumbnail }}" width="80" height="80" alt="profile picture">
+                    <img src="{{ item.thumbnail is empty ? img_path ~ '/default.png' : item.thumbnail }}" width="80" height="80" alt="profile picture">
                 </a>
                 <div class="item-card-desc">
                     <h4 class="item-title">

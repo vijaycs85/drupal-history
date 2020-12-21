@@ -4,23 +4,31 @@
     "date": "2020-11-10T00:00:00+00:00",
     "title": "Code contribution via issue forks",
     "href": "https://www.drupal.org/docs/develop/git/using-git-to-contribute-to-drupal/creating-issue-forks-and-merge-requests",
-    "description": "Drupal contributors may now collaborate using git branches and merge requests. Until this day, code collaboration on drupal.org featured uploaded patch files.",
+    "description": "Drupal contributors may now collaborate [using git branches and merge requests](https://www.drupal.org/docs/develop/git/using-git-to-contribute-to-drupal/creating-issue-forks-and-merge-requests). Until this day, code collaboration on drupal.org featured uploaded patch files.",
     "comment": ""
   },
   {
-    "priority": 2,
+    "priority": 3,
+    "date": "2020-10-24T00:00:00+00:00",
+    "title": "Composer 2.0 released",
+    "href": "https://blog.packagist.com/composer-2-0-is-now-available/",
+    "description": "The package manager that assembles virtually all modern Drupal sites gets a significant performance and memory utilization boost. Developer productivity and mood noticeably improve.",
+    "comment": ""
+  },
+  {
+    "priority": 1,
     "date": "2020-06-03T00:00:00+00:00",
     "title": "Drupal 9.0 released",
     "href": "https://www.drupal.org/project/drupal/releases/9.0.0",
-    "description": "The first Drupal release with no new functionality - and that's great! Drupal 8 committed to adding functionality in a backwards compatible manner. Drupal 9 has the same functionality as Drupal 8.9, but without a lot of backward compatibility code. This approach balances easy major version major upgrades with a lean codebase. https://celebratedrupal.org/ centralized our virtual parties, as this happened during the days of Covid.",
+    "description": "The first Drupal release with no new functionality - and that's great! Drupal 9 has the same functionality as Drupal 8.9, but without a lot of backward compatibility code. The [release parties](https://celebratedrupal.org/) were virtual, as this happened during the times of Covid.",
     "comment": ""
   },
   {
     "priority": 3,
     "date": "2017-03-08T00:00:00+00:00",
-    "title": "Drupal changes backwards compatibility policy after 16 years.",
+    "title": "Drupal changes backwards compatibility policy after 16 years",
     "href": "https://dri.es/making-drupal-upgrades-easy-forever",
-    "description": "Drupal was doing Move Fast and Break Things a few years before Facebook. New features were routinely committed to Drupal without backward compatibility. Recognizing its large installed base, Drupal announces that all changes must be backward compatible, and that major version upgrades will be easy forever.",
+    "description": "Drupal was doing [Move Fast and Break Things](https://www.cnet.com/news/zuckerberg-move-fast-and-break-things-isnt-how-we-operate-anymore/) a few years before Facebook. New features were routinely committed to Drupal without backward compatibility. Recognizing its large installed base, Drupal announces that all changes must be backward compatible, and that major version upgrades will be easy forever.",
     "comment": ""
   },
   {
@@ -45,10 +53,11 @@
     "title": "Drupal 8.0 released",
     "href": "https://www.drupal.org/8",
     "description": "Five years in the making, Drupal 8 embraces objects and declarative configuration. Entity API, Twig, and Accessibility are the talk at the worldwide release parties.",
+    "thumbnail": "https://cdn.jsdelivr.net/gh/weitzman/drupal-timeline/assets/8.0.png",
     "comment": ""
   },
   {
-    "priority": 3,
+    "priority": 4,
     "date": "2015-09-08T00:00:00+00:00",
     "title": "Cache API boosts Drupal 8 performance",
     "href": "https://www.drupal.org/project/drupal/issues/2429617",
@@ -66,7 +75,7 @@
   {
     "priority": 4,
     "date": "2015-05-12T00:00:00+00:00",
-    "title": "Drupalcon Prenote.",
+    "title": "Drupalcon Prenote",
     "href": "https://www.youtube.com/watch?v=7zvCOKzY3kA",
     "description": "jam & robertDouglass wake us up for an infotainment extravaganza featuring sing-a-longs; bad jokes; Git tutorials, yodelling, use of alphabet, or beer pouring technique. On this day we belted out a Drupal flavored Let it Go from Frozen.",
     "comment": ""
@@ -74,7 +83,7 @@
   {
     "priority": 2,
     "date": "2015-03-23T00:00:00+00:00",
-    "title": "Drupal core governance overhaul for project sustainability.",
+    "title": "Drupal core governance overhaul for project sustainability",
     "href": "https://groups.drupal.org/node/462713",
     "description": "Drupal had always relied on a single release manager to review and merge core changes. On this day Drupal embraces multiple committer roles and adds a process for adding new committers. In 2020 are about a dozen core committers.",
     "comment": ""
@@ -84,7 +93,7 @@
     "date": "2014-10-31T00:00:00+00:00",
     "title": "Australian government standardizes on Drupal. ",
     "href": "https://www.drupal.org/project/govcms  ",
-    "description": "govCMS embodies Drupal's popularity with governments all over the world.",
+    "description": "govCMS embodies Drupal's popularity with [governments all over the world](https://groups.drupal.org/government-sites).",
     "comment": ""
   },
   {
@@ -112,7 +121,7 @@
     "comment": ""
   },
   {
-    "priority": 3,
+    "priority": 4,
     "date": "2011-03-10T00:00:00+00:00",
     "title": "Drupalcon Trivia Night",
     "href": "https://chicago2011.drupal.org/forum/drupalcon-trivia-night",
@@ -129,14 +138,14 @@
   },
   {
     "priority": 3,
-    "date": "2011-03-07:00:00+00:00",
+    "date": "2011-03-07T00:00:00+00:00",
     "title": "Drupal Watchdog print magazine",
     "href": "http://www.drupalwatchdog.net/about",
     "description": "Drupalcon attendees open their tote bags and find Drupal Watchdog magazine, the first print magazine dedicated entirely to Drupal. The first issue features Dries on the cover. Tag1, the publisher, makes the magazine available for purchase in bookstores in 2014. The name comes from Drupal's hook_watchdog function.",
     "comment": ""
   },
   {
-    "priority": 3,
+    "priority": 2,
     "date": "2011-01-06T00:00:00+00:00",
     "title": "Automated testing for Drupal Core and Contrib",
     "href": "https://git.drupalcode.org/project/simpletest/-/commit/c0d244ada87809a5e809b2a872370c9139cd6b88",
@@ -149,6 +158,7 @@
     "title": "Drupal 7.0 released",
     "href": "https://groups.drupal.org/plan-Drupal-7-release-party",
     "description": "More than 250 parties in over 90 countries were held to celebrate this great release. Drupal 7 is still the most popular Drupal release, featuring the Seven theme, designed by Mark Boulton and Leisa Reichelt.",
+    "thumbnail": "https://cdn.jsdelivr.net/gh/weitzman/drupal-timeline/assets/7.0.png",
     "comment": ""
   },
   {
@@ -205,10 +215,11 @@
     "title": "Drupal 6.0 released",
     "href": "",
     "description": "This release features a rewritten menu system, and an Update Status module which prompts admins to update their modules, especially after a security release.",
+    "thumbnail": "https://cdn.jsdelivr.net/gh/weitzman/drupal-timeline/assets/6.0.png",
     "comment": ""
   },
   {
-    "priority": 3,
+    "priority": 4,
     "date": "2007-12-12T00:00:00+00:00",
     "title": "Sun Microsystems bails out drupal.org",
     "href": "https://www.drupal.org/forum/general/news-and-announcements/2007-12-12/sun-donates-sunfire-x4200-for-drupalorg",
@@ -226,7 +237,7 @@
   {
     "priority": 4,
     "date": "2007-11-03T00:00:00+00:00",
-    "title": "Bay Area Drupal Camp (BADCamp) unites Drupalers at UC Berkeley.",
+    "title": "Bay Area Drupal Camp (BADCamp) meets at UC Berkeley",
     "href": "https://www.drupal.org/forum/general/events/2007-10-06/bay-area-drupal-camp-badcamp-07-nov-3rd-4th",
     "description": "This large, annual event remains free to this day. Kudos to Jen Lampton for her many years of organizing. Other notable Camps include Design 4 Drupal, Drupal Dev Days, Frontend United, and Midwest Developer Summit",
     "comment": ""
@@ -237,6 +248,7 @@
     "title": "Drupal 5.0 is released",
     "href": "",
     "description": "This release incorporates jQuery, a young open source project. Drupal's support helps jQuery gain attention and then it rises to huge popularity. This release introduces install profiles and a web based installer.",
+    "thumbnail": "https://cdn.jsdelivr.net/gh/weitzman/drupal-timeline/assets/5.0.png",
     "comment": ""
   },
   {
@@ -248,9 +260,9 @@
     "comment": ""
   },
   {
-    "priority": 3,
+    "priority": 2,
     "date": "2006-09-01T00:00:00+00:00",
-    "title": "Drupal Association formalizes governance and money management.",
+    "title": "Drupal Association formalizes governance and money management",
     "href": "https://dri.es/drupal-association-launched",
     "description": "Drupal's governance formalizes from BDFL to a non-profit model. Led by Jacob Redding, VZW is initially a money manager only. Drupal VZW transforms into the Drupal Association in 2011 and becomes more prominent in promoting Drupal and runs Drupalcon.",
     "comment": ""
@@ -258,17 +270,18 @@
   {
     "priority": 1,
     "date": "2006-05-01T00:00:00+00:00",
-    "title": "Drupal 4.7 is released with a Form API.",
+    "title": "Drupal 4.7 is released with a Form API",
     "href": "",
     "description": "The new Form API by Adrian Rossouw strengthens Drupal's secure-by-default approach. XSS protections, validation of choices, and only processing POST data that was actually on the form.",
+    "thumbnail": "https://cdn.jsdelivr.net/gh/weitzman/drupal-timeline/assets/4.7.png",
     "comment": ""
   },
   {
     "priority": 3,
     "date": "2006-02-07T00:00:00+00:00",
-    "title": "Content Creation Kit (CCK) by yched and KarenS, adds custom fields to nodes via the Drupal UI.",
+    "title": "Content Creation Kit (CCK) brings a UI for adding custom fields.",
     "href": "https://drupal.org/project/cck",
-    "description": "CCK was and is the heart of Drupal's rich content type system. CCK moved into Drupal core in v7, and is now known as the Field API. JonBob led a session about it at very first Drupalcon, and made the first iteration in Flexinode module, which later morphed into CCK.",
+    "description": "CCK was incorporated into Drupal 7 as the Field API. JonBob led a session about it at very first Drupalcon, and made the first iteration in Flexinode module. yched and KarenS evolved that work into CCK.",
     "comment": ""
   },
   {
@@ -290,7 +303,7 @@
   {
     "priority": 3,
     "date": "2005-12-23T00:00:00+00:00",
-    "title": "'Building Online Communities' is published",
+    "title": "Building Online Communities book is published",
     "href": "https://www.drupal.org/forum/general/news-and-announcements/2005-12-23/my-drupal-book-has-arrived",
     "description": "Robert Douglass authors the first Drupal book, recognizing a growing demand for Drupal education.",
     "comment": ""
@@ -306,33 +319,34 @@
   {
     "priority": 1,
     "date": "2005-02-24T00:00:00+00:00",
-    "title": "First Drupalcon held in Antwerp.",
+    "title": "First Drupalcon held in Antwerp",
     "href": "https://www.drupal.org/developer-sprint-antwerp-2005",
-    "description": "Drupal enthusiasts meet in person for the first time. Amazingly, 45 people fly to Antwerp from all over the globe. Marc Canter (Macromedia founder) and Chris Musssina (later invented the #hashtag) attended. The conference with scheduled presentations [happened at FOSDEM on Feb 26th, 2005](https://www.drupal.org/conference-brussels-2005). [Dries' Album](https://dri.es/album/drupalcon-antwerp-2005/)",
+    "description": "Drupal enthusiasts meet in person for the first time. Amazingly, 45 people fly to Antwerp from all over the globe. Marc Canter (Macromedia founder) and Chris Musssina (later invented the #hashtag) attended. [Photos by Dries](https://dri.es/album/drupalcon-antwerp-2005/).",
     "comment": ""
   },
   {
     "priority": 2,
     "date": "2003-05-01T00:00:00+00:00",
-    "title": "Drupalers build Deanspace, a semi-official presence for USA presidential candidate Howard Dean.",
+    "title": "Deanspace, a semi-official presence for USA presidential candidate Howard Dean",
     "href": "",
-    "description": "This was a milestone in the rise of the Internet for political campaigns and grassroots initiatives. It also kicked off a long love affair between Drupal and non-profits.",
+    "description": "Deanspace was a milestone in the rise of the Internet for political campaigns and grassroots initiatives. It also kicked off a long love affair between Drupal and non-profits ([Greenpeace](https://www.greenpeace.org/international/), [American Cancer Society](https://secure.acsevents.org/site/SPageServer/?pagename=relay), [Red Nose Day](https://www.comicrelief.com/rednoseday/), ...).",
     "comment": ""
   },
   {
     "priority": 1,
     "date": "2002-06-15T00:00:00+00:00",
-    "title": "Drupal 4.0 is released, with a new taxonomy module.",
+    "title": "Drupal 4.0 is released, with a new taxonomy module",
     "href": "",
-    "description": "Taxonomy module, written by Marco Molinari. Marco wrote it because he needed a way to group forums into categories. Drupal's rich taxonomy system foreshadows what will be popularly known as tags/labels.",
+    "description": "Marco wrote taxonomy because he needed a way to group forums into categories. Drupal's rich taxonomy system foreshadows what will become known as tags/labels in [Delicious](http://del.icio.us/, [Flickr](https://www.flickr.com/), [Twitter](https://twitter.com/home), etc",
     "comment": ""
   },
   {
     "priority": 2,
     "date": "2001-09-15T00:00:00+00:00",
-    "title": "Drupal 3.0 is released.",
+    "title": "Drupal 3.0 is released",
     "href": "",
     "description": "3.0 major had a whopping 6 month development cycle. Nodes are introduced as a building block for content. They can be specialized into many content types.",
+    "thumbnail": "https://cdn.jsdelivr.net/gh/weitzman/drupal-timeline/assets/3.0.png",
     "comment": ""
   },
   {
