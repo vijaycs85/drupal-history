@@ -104,6 +104,8 @@
     "priority": 2,
     "date": "2015-03-23T00:00:00+00:00",
     "title": "Drupal core governance overhaul for project sustainability",
+    "username": "dries",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-1-1401055330.jpg?itok=E9No1cHd",
     "href": "https://groups.drupal.org/node/462713",
     "description": "Drupal had always relied on a single release manager to review and merge core changes. On this day Drupal embraces multiple committer roles and adds a process for adding new committers. In 2020 are about a dozen core committers.",
     "comment": ""
@@ -112,6 +114,8 @@
     "priority": 3,
     "date": "2014-10-31T00:00:00+00:00",
     "title": "Australian government standardizes on Drupal. ",
+    "username": "kimpepper",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-370574-1401256170.jpg?itok=3VEDVAEv",
     "href": "https://www.drupal.org/project/govcms  ",
     "description": "govCMS embodies Drupal's popularity with [governments all over the world](https://groups.drupal.org/government-sites).",
     "comment": ""
@@ -128,6 +132,8 @@
     "priority": 2,
     "date": "2013-12-05T00:00:00+00:00",
     "title": "Drupal 8 gets semver, minor release scheduling, and beta requirements policy",
+    "username": "xjm",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-65776-1401232682.jpg?itok=5VZxTbDk",
     "href": "https://dri.es/the-next-step-for-drupal-8-is-a-beta",
     "description": "Drupal core adopts semantic versioning and a sustainable, predictable minor release schedule.",
     "comment": ""
@@ -187,8 +193,10 @@
     "priority": 3,
     "date": "2011-08-08T00:00:00+00:00",
     "title": "Core Office Hours and DrupalCon Mentoring",
+    "username": "yesCT",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-258568-1488543869.png?itok=bXbUCiQB",
     "href": "https://www.drupal.org/forum/general/news-and-announcements/2011-08-08/core-office-hours",
-    "description": "xjm and catch begin leading core office hours on IRC 12 hours apart, providing global coverage. This generous spirit soon manifests at DrupalCon Denver as the first Core Mentoring contribution day, where new contributors are guided through their first core issue.",
+    "description": "xjm and catch begin leading core office hours on IRC 12 hours apart, providing global coverage. This generous spirit soon manifests at DrupalCon Denver as the first Core Mentoring contribution day, where new contributors are guided through their first core issue. YesCT later leads this effort.",
     "comment": ""
   },
   {
@@ -215,6 +223,8 @@
     "priority": 4,
     "date": "2010-01-10T00:00:00+00:00",
     "title": "Open Atrium distro by Development Seed",
+    "username": "yhahn",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/default-avatar.png?itok=pCwA0iJh",
     "href": "https://i.pinimg.com/originals/fc/e0/61/fce0616444182df747d3aa673e4b3b4a.png",
     "description": "An early distro, and a shining light in terms of visual design, user experience, and software architecture.",
     "comment": ""
@@ -224,6 +234,8 @@
     "date": "2009-09-25T00:00:00+00:00",
     "title": "Pressflow friendly fork adds DB replication and reverse proxy caching",
     "href": "http://www.pressflow.org/",
+    "username": "david-strauss",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-93254-1565639110.jpg?itok=Do8go21I",
     "description": "David Strauss and collaborators maintain a distribution that helps Drupal scale. Their improvements are later incorporated into Drupal 7.",
     "comment": ""
   },
@@ -231,8 +243,10 @@
     "priority": 3,
     "date": "2009-06-09T00:00:00+00:00",
     "title": "Drush becomes stand-alone tool with 2.0 release",
+    "username": "greg1anderson",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-438598-1429137703.jpg?itok=OW3zkQKw",
     "href": "https://www.drupal.org/project/drush/releases/6.x-2.0",
-    "description": "Drush is no longer a module, helping it install a site, perform DB backups, etc. Drush becomes Drupal's de facto command line tool.",
+    "description": "Drush is no longer a module, helping it install a site, perform DB backups, etc. Drush becomes Drupal's de facto command line tool. Thanks to [Moshe Weitzman](https://www.drupal.org/u/moshe-weitzman) and [Greg Anderson](https://www.drupal.org/u/greg1anderson) for maintaining this vital tool.",
     "comment": ""
   },
   {
@@ -293,6 +307,8 @@
     "priority": 2,
     "date": "2006-09-01T00:00:00+00:00",
     "title": "Drupal Association formalizes governance and money management",
+    "username": "jredding",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/default-avatar.png?itok=pCwA0iJh",
     "href": "https://dri.es/drupal-association-launched",
     "description": "Drupal's governance formalizes from BDFL to a non-profit model. Led by Jacob Redding, VZW is initially a money manager only. Drupal VZW transforms into the Drupal Association in 2011 and becomes more prominent in promoting Drupal and runs Drupalcon.",
     "comment": ""
@@ -312,6 +328,8 @@
     "priority": 3,
     "date": "2006-02-07T00:00:00+00:00",
     "title": "Content Creation Kit (CCK) brings a UI for adding custom fields.",
+    "username": "yched",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-39567-1401268939.jpg?itok=oADgCk3p",
     "href": "https://drupal.org/project/cck",
     "description": "CCK was incorporated into Drupal 7 as the Field API. JonBob led a session about it at very first Drupalcon, and made the first iteration in Flexinode module. yched and KarenS evolved that work into CCK.",
     "comment": ""
@@ -320,6 +338,8 @@
     "priority": 2,
     "date": "2006-02-06T00:00:00+00:00",
     "title": "groups.drupal.org is launched",
+    "username": "moshe-weitzman",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-23-1400198420.jpg?itok=oHubZd8u",
     "href": "https://groups.drupal.org/helloworld",
     "description": "Moshe Weitzman introduced this portal for local user groups to have an online rallying place. Groups helped the Drupal community grow tighter, and helped newbies climb its learning curve. Later led by joshk, greggles, and ezra-g.",
     "comment": ""
@@ -328,6 +348,8 @@
     "priority": 4,
     "date": "2006-01-11T00:00:00+00:00",
     "title": "Lullabot podcast is launched",
+    "username": "jjeff",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-17190-1424189961.jpg?itok=kaXfcZby",
     "href": "https://www.lullabot.com/podcasts/drupalizeme-podcast/drupal-podcast-no-1",
     "description": "This podcast, founded by Jeff Robbins, still runs today. This marks a growth in the marketing and communication of Drupal.",
     "comment": ""
@@ -336,6 +358,8 @@
     "priority": 3,
     "date": "2005-12-23T00:00:00+00:00",
     "title": "Building Online Communities book is published",
+    "username": "robertdouglass",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-5449-1400197006.jpg?itok=QCY5ImU5",
     "href": "https://www.drupal.org/forum/general/news-and-announcements/2005-12-23/my-drupal-book-has-arrived",
     "description": "Robert Douglass authors the first Drupal book, recognizing a growing demand for Drupal education.",
     "comment": ""
@@ -344,6 +368,8 @@
     "priority": 1,
     "date": "2005-08-01T00:00:00+00:00",
     "title": "Drupal security team is formed",
+    "username": "chx",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-9446-1439655464.jpg?itok=OwaItTH7",
     "href": "https://www.drupal.org/drupal-security-team",
     "description": "This volunteer team is first led by chx. The team dutifully protects Drupal core and all the contrib modules that opt into its coverage. Future leaders would be Heine, greggles, and mlhess.",
     "comment": "@todo exact date"

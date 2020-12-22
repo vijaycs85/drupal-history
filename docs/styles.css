@@ -12,9 +12,7 @@ a:hover, a:focus {
 nav.bg-blue {
     background-color: #0678be;
 }
-.nav-item {
 
-}
 h1, h2 {
     color: #064771;
     display: block;
@@ -33,14 +31,14 @@ hr {
     position: absolute;
     width: 2px;
     height: 100%;
-    left: 2.2rem;
+    left: 2.4rem;
     z-index:-1;
     background-color:gainsboro
 
 }
-h4.btn {
-    border: 2px solid #DDD;
-    background: whitesmoke;
+h4.btn, h4.btn:hover,  h4.btn:focus {
+    border: 2px solid #367d02;
+    background: #7cbc48;
     width: 4.5rem;
     border-radius: 50%;
     height: 4.5rem;
