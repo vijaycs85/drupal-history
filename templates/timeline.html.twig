@@ -47,6 +47,7 @@
                 <p>TBC</p>
                 <h3 class="fs-5" id="summary-data-model-changes">Data model changes</h3>
                 <p>TBC</p>
+                <ul class="links"><li class="add-event"><a href="https://github.com/weitzman/drupal-timeline/issues/new" target="_blank" title="Add a new memorable event.">Add new event</a></li></ul>
             </div>
             <h2 class="fs-4" class="title">Timeline</h2>
             {%  for year, items in data %}
@@ -76,9 +77,9 @@
                                 {#                    <div class="description shadow p-3 border bg-light shadow-md"><blockquote>{{ item.description|raw }}</blockquote></div>#}
                                 <div class="description p-3 bg-light"><blockquote>{{ item.description|raw }}</blockquote></div>
                                 {% if item.href is not empty %}
-                                    <div class="links text-end">
-                                        <a href="{{ item.href }}" target="_blank">Read more...</a>
-                                    </div>
+                                    <ul class="links text-end">
+                                        <li><a href="{{ item.href }}" target="_blank">Read more...</a></li>
+                                    </ul>
                                 {% endif %}
                             </div>
                         </div>

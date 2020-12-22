@@ -34,7 +34,18 @@ hr {
     left: 2.4rem;
     z-index:-1;
     background-color:gainsboro
-
+}
+.links {
+    list-style-type: none;
+    list-style-image: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.add-event a {
+    background-position: 0 -415px;
+    padding-left: 15px;
+    background-image: url(./assets/img/small-icons.png);
+    background-repeat: no-repeat;
 }
 h4.btn, h4.btn:hover,  h4.btn:focus {
     border: 2px solid #367d02;
