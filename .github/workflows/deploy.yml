@@ -1,0 +1,45 @@
+name: Deploy
+
+on:
+  schedule:
+   - cron: '0,15,30,45 0-23 * * *' # everyday 15 minutes.
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Validate composer.json and composer.lock
+      run: composer validate
+
+    - name: Cache Composer packages
+      id: composer-cache
+      uses: actions/cache@v2
+      with:
+        path: vendor
+        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-php-
+
+    - name: Install dependencies
+      if: steps.composer-cache.outputs.cache-hit != 'true'
+      run: composer install --prefer-dist --no-progress --no-suggest
+
+    - name: Composer build
+      run: composer run-script build
+
+    - name: Deploy to Github Pages
+      uses: crazy-max/ghaction-github-pages@v2
+      with:
+        target_branch: gh-pages
+        build_dir: docs
+        committer: Vijaya Chandran Mani<vijaycs85@gmail.com>
+        author: Vijaya Chandran Mani<vijaycs85@gmail.com>
+        allow_empty_commit: false
+        commit_message: 'Deploy changes'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
