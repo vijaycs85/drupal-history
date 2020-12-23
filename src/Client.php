@@ -81,7 +81,9 @@ class Client {
      *   Fully qualified URL.
      */
     protected function getProfileUrl(string $username) {
-        return self::DRUPAL_ORG_BASE_PATH . 'u/' . $username;
+        $search = [' '];
+        $replace = ['-'];
+        return self::DRUPAL_ORG_BASE_PATH . 'u/' . str_replace($search, $replace, $username);
     }
 
     public function debugOn() {
