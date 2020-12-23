@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  deploy:
+  quality-checks:
     runs-on: ubuntu-latest
 
     steps:
@@ -29,11 +29,11 @@ jobs:
       if: steps.composer-cache.outputs.cache-hit != 'true'
       run: composer install --prefer-dist --no-progress --no-suggest
 
-    - name: Composer build
+    - name: Run site build
       run: composer run-script build
 
-    - name: PHPCS
+    - name: Run code sniffer (PHPCS)
       run: composer run-script phpcs
 
-    - name: Test
+    - name: Run automated tests (PHPUnit)
       run: composer run-script test
