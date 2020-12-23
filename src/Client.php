@@ -21,6 +21,8 @@ class Client
 
     protected $renderer;
 
+    protected $endpoint;
+
     public function __construct(ClientInterface $client, CommonMarkConverter $markdown_converter, Renderer $renderer)
     {
         $this->httpClient = $client;
@@ -34,7 +36,7 @@ class Client
         foreach ($content as $delta => $item) {
             $date = DateTime::createFromFormat(DateTimeInterface::ATOM, $item->date);
             $item->hash = crc32($item->title);
-            $item->profileUrl = is_string($item->username) ? $this->getProfileUrl($item->username) : null;
+            $item->profileUrl = property_exists($item, 'username') ? $this->getProfileUrl($item->username) : null;
             $item->version = $this->getVersion($item->title);
             foreach (['description'] as $property) {
                 $item->{$property} = $this->markdownConverter->convertToHtml($item->{$property});
@@ -53,11 +55,13 @@ class Client
         // For now, serving from local file.
         // return json_decode(file_get_contents($data_filename));
 
-        $response = $this->httpClient->request('GET', self::API_GH_ENDPOINT);
-        if ($response->getStatusCode() !== 200) {
-            // Use the data available locally.
+        try {
+            $response = $this->httpClient->request('GET', $this->getApiEndpoint());
+        } catch (\Exception $e) {
             $response_body = file_get_contents($data_filename);
-        } else {
+        }
+
+        if (isset($response) && $response->getStatusCode() == 200) {
             // Save the latest file.
             // @todo probably use HEAD and save with ETag instead of
             // saving the same data multiple times.
@@ -66,7 +70,16 @@ class Client
         }
         return json_decode($response_body);
     }
+    public function setApiEndpoint($url)
+    {
+        $this->endpoint = $url;
+        return $this;
+    }
 
+    protected function getApiEndpoint()
+    {
+        return $this->endpoint ?: self::API_GH_ENDPOINT;
+    }
     protected function getVersion($title)
     {
         preg_match('/^Drupal\s([0-9]\.[0-9]+)/s', $title, $matches);
@@ -89,13 +102,12 @@ class Client
         return self::DRUPAL_ORG_BASE_PATH . 'u/' . str_replace($search, $replace, $username);
     }
 
-    public function debugOn()
-    {
-        ini_set('display_errors', 1);
-        ini_set('display_startup_errors', 1);
-        error_reporting(E_ALL);
-    }
-
+    /**
+     * Renders the HTML page content.
+     *
+     * @return string
+     *   Rendered content.
+     */
     public function render()
     {
         return $this->renderer->render($this->generate());
