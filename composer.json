@@ -13,16 +13,11 @@
     "twig/twig": "^3.0",
     "symfony/yaml": "^5.2"
   },
-  "autoload": {
-    "psr-4": {
-      "Vijaycs85\\Drupal\\History\\": "src/"
-    }
-  },
   "scripts": {
     "build": "php app.php > docs/index.html",
     "dev": "php app.php --debug",
     "test": "vendor/bin/phpunit --testdox tests",
-    "phpcs": "vendor/bin/phpcs --standard=PSR12 src"
+    "phpcs": "vendor/bin/phpcs --standard=PSR12 src tests"
   },
   "authors": [
     {
@@ -36,5 +31,10 @@
   "require-dev": {
     "phpunit/phpunit": "^9",
     "squizlabs/php_codesniffer": "^3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vijaycs85\\Drupal\\History\\": "src/"
+    }
   }
 }
