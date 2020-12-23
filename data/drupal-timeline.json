@@ -150,6 +150,16 @@
   },
   {
     "priority": 4,
+    "date": "2011-10-11T00:00:00+00:00",
+    "title": "Issue following replaces 'subscribe'",
+    "username": "dww",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-46549-1402088724.png?itok=zoNlDNJF",
+    "href": "https://www.drupal.org/forum/general/news-and-announcements/2011-10-11/stop-subscribing-start-following",
+    "description": "Before this change, it was customary to post a comment with only the word <em>subscribe</em> in order to start following an issue. Unfortunately, this marked the issue as new and spammed all other followers. This practice ended when the community used Chip-In to fund a flag module implementation.",
+    "comment": ""
+  },
+  {
+    "priority": 4,
     "date": "2011-03-10T00:00:00+00:00",
     "title": "Drupalcon Trivia Night",
     "username": "alanburke",
@@ -185,7 +195,7 @@
     "username": "boombatower",
     "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-214218-1400198420.jpg?itok=CtFmQed6",
     "href": "https://git.drupalcode.org/project/simpletest/-/commit/c0d244ada87809a5e809b2a872370c9139cd6b88",
-    "description": "After 7 years in Contrib, the simpletest module is added in Drupal 7, along with a substantial test suite. [qa.drupal.org](https://qa.drupal.org/) and then [DrupalCI](https://www.drupal.org/drupalorg/docs/drupal-ci) ensure that each patch passes tests before merging. [Drupal Test Traits](https://gitlab.com/weitzman/drupal-test-traits) later brings this framework to client sites. Other major contributors here were [chx](https://www.drupal.org/u/chx) and [Sun](https://www.drupal.org/u/sun).",
+    "description": "After 7 years in Contrib, the simpletest module is added in Drupal 7, along with a substantial test suite. [qa.drupal.org](https://qa.drupal.org/) and then [DrupalCI](https://www.drupal.org/drupalorg/docs/drupal-ci) ensure that each patch passes tests before merging. [Drupal Test Traits](https://gitlab.com/weitzman/drupal-test-traits) later brings this framework to client sites. Other major contributors here were [chx](https://www.drupal.org/u/chx), [rfay](https://www.drupal.org/u/rfay), and [Sun](https://www.drupal.org/u/sun).",
     "comment": ""
   },
   {
@@ -213,10 +223,10 @@
     "priority": 2,
     "date": "2010-02-05T00:00:00+00:00",
     "title": "Drupal development moves from CVS to Git",
-    "username": "webchick",
-    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-24967-1400198420.png?itok=4z5iRr5b",
+    "username": "sdboyer",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-146719-1405525313.png?itok=8xwVrs83",
     "href": "https://groups.drupal.org/node/48818",
-    "description": "webchick opens a two week discussion assessing bzr and git for our next VCS. Then she reviews the discussion and announces that Git has been chosen. This is how bike sheds are overcome.",
+    "description": "webchick opens a two week discussion assessing bzr and git for our next VCS. Then she reviews the discussion and announces that Git has been chosen. This is how bike sheds are overcome. [marvil07](https://www.drupal.org/u/marvil07), [dww](https://www.drupal.org/u/dww), and [eliza411](https://www.drupal.org/u/eliza411) led the implementation known as the Great Git Migration.",
     "comment": ""
   },
   {
@@ -237,6 +247,16 @@
     "avatar": "https://pbs.twimg.com/profile_images/2533427888/eo5j5htdpe602mtasyk8.jpeg",
     "href": "https://i.pinimg.com/originals/fc/e0/61/fce0616444182df747d3aa673e4b3b4a.png",
     "description": "An early distro, and a shining light in terms of visual design, user experience, and software architecture.",
+    "comment": ""
+  },
+  {
+    "priority": 2,
+    "date": "2009-10-24T00:00:00+00:00",
+    "title": "whitehouse.gov relaunches on Drupal",
+    "href": "https://dri.es/whitehouse-gov-using-drupal",
+    "username": "whitehouse",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-2356044-1438715173.jpg?itok=Co8w2Kde",
+    "description": "Barack Obama's administration launches [whitehouse.gov](https://www.whitehouse.gov) and [We the People](https://www.drupal.org/project/petitions), a site where constituents can directly petition the White House for change. The projects are [featured at Drupalcon San Francisco](https://sf2010.drupal.org/conference/sessions/open-source-government.html).",
     "comment": ""
   },
   {
@@ -285,7 +305,7 @@
     "date": "2007-11-30T00:00:00+00:00",
     "title": "Acquia is announced to the world",
     "username": "batsonjay",
-    "avatar": "https://pbs.twimg.com/profile_images/793815905201430529/MnJUahHp_400x400.jpg",
+    "avatar": "https://avatars3.githubusercontent.com/u/552327?s=460&v=4",
     "href": "https://dri.es/acquia-my-drupal-startup",
     "description": "Acquia, a startup by Dries Buytaert and Jay Batson, announces its intention to offer commercial support and hosting for Drupal. Acquia continues to be the largest sponsor of Drupal development, and its largest web hosting platform.",
     "comment": ""
@@ -309,6 +329,16 @@
     "href": "https://www.drupal.org/forum/general/news-and-announcements/2007-01-15/drupal-50-released",
     "description": "This release incorporates jQuery, a young open source project. Drupal's support helps jQuery gain attention and then it rises to huge popularity. This release also introduces install profiles and a web based installer.",
     "thumbnail": "https://cdn.jsdelivr.net/gh/weitzman/drupal-timeline/assets/5.0.png",
+    "comment": ""
+  },
+  {
+    "priority": 2,
+    "date": "2006-11-11T00:00:00+00:00",
+    "title": "Drupal projects gain a formal release system",
+    "username": "dww",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-46549-1402088724.png?itok=zoNlDNJF",
+    "href": "https://www.drupal.org/node/94000",
+    "description": "Drupal contributed projects are able to make tagged releases, ending the era of date-based tarballs and CVS projects inside SVN checkouts. The release system built on prior work to [partition commit access by project owner](https://www.drupal.org/node/63648).",
     "comment": ""
   },
   {
@@ -405,11 +435,11 @@
   {
     "priority": 2,
     "date": "2003-05-01T00:00:00+00:00",
-    "title": "Deanspace, a semi-official presence for USA presidential candidate Howard Dean",
+    "title": "Deanspace provides Drupal tools for supporters of USA presidential candidate Howard Dean",
     "username": "zacker",
     "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-2840-1430105266.png?itok=_3vD8cps",
     "href": "https://sourceforge.net/projects/dean/",
-    "description": "Deanspace was a milestone in the rise of the Internet for political campaigns and grassroots initiatives. It also kicked off a long love affair between Drupal and non-profits ([Greenpeace](https://www.greenpeace.org/international/), [American Cancer Society](https://secure.acsevents.org/site/SPageServer/?pagename=relay), [Red Nose Day](https://www.comicrelief.com/rednoseday/), ...).",
+    "description": "Deanspace was a milestone in the rise of the Internet for political campaigns and grassroots initiatives. It also kicked off a long love affair between Drupal and non-profits (e.g. [Greenpeace](https://www.greenpeace.org/international/), [American Cancer Society](https://secure.acsevents.org/site/SPageServer/?pagename=relay), [Red Nose Day](https://www.comicrelief.com/rednoseday/), ...).",
     "comment": ""
   },
   {
@@ -417,7 +447,7 @@
     "date": "2002-06-15T00:00:00+00:00",
     "title": "Drupal 4.0 is released, with a new taxonomy module",
     "username": "marco",
-    "avatar": "https://pbs.twimg.com/profile_images/1904585061/image_400x400.jpg",
+    "avatar": "https://avatars2.githubusercontent.com/u/527826?s=400&v=4",
     "href": "https://git.drupalcode.org/project/drupal/-/blob/4.0.x/CHANGELOG",
     "description": "Marco wrote taxonomy because he needed a way to group forums into categories. Drupal's rich taxonomy system foreshadows what will become known as tags/labels in [Delicious](http://del.icio.us/), [Flickr](https://www.flickr.com/), [Twitter](https://twitter.com/home), etc",
     "comment": ""
