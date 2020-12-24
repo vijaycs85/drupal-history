@@ -5,6 +5,14 @@ on:
    - cron: '0,15,30,45 0-23 * * *' # everyday 15 minutes.
   push:
     branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Enter commit message'
+        required: true
+        default: 'Manual build'
+  repository_dispatch:
+    types: [pushed]
 
 jobs:
   deploy:
