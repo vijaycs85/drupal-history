@@ -52,7 +52,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  coverage:
     - name: Run automated tests (PHPUnit)
       run: composer run-script test
 
