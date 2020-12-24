@@ -40,14 +40,6 @@ jobs:
     - name: Composer build
       run: composer run-script build
 
-    - name: Run automated tests (PHPUnit)
-      run: composer run-script test
-
-    - name: Upload coverage results to Coveralls
-      run: composer run-script coveralls
-      env:
-        COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
     - name: Deploy to Github Pages
       uses: crazy-max/ghaction-github-pages@v2
       with:
@@ -59,3 +51,12 @@ jobs:
         commit_message: 'Deploy changes'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  coverage:
+    - name: Run automated tests (PHPUnit)
+      run: composer run-script test
+
+    - name: Upload coverage results to Coveralls
+      run: composer run-script coveralls
+      env:
+        COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
