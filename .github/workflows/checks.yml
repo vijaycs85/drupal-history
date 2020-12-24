@@ -11,8 +11,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Setup PHP with Xdebug
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '7.4'
+        coverage: xdebug
 
+    - uses: actions/checkout@v2
     - name: Validate composer.json and composer.lock
       run: composer validate
 
@@ -37,3 +42,8 @@ jobs:
 
     - name: Run automated tests (PHPUnit)
       run: composer run-script test
+
+    - name: Upload coverage results to Coveralls
+      uses: coverallsapp/github-action@master
+      env:
+        COVERALLS_REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
