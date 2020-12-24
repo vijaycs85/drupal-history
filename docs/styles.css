@@ -9,7 +9,8 @@ a:hover, a:focus {
     color: #0678be;
     text-decoration: underline;
 }
-nav.bg-blue {
+.bg-blue {
+    color: #FFFFFF;
     background-color: #0678be;
 }
 
@@ -20,6 +21,10 @@ h1, h2 {
 hr {
     margin: 0;
 }
+footer {
+    font-size: .7rem;
+}
+
 .content {
     color: #222222;
     font-size: 1rem;

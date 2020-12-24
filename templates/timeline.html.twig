@@ -66,7 +66,6 @@
                                     {% endif %}
                                     on <time datetime="{{ item.date }}" data-created-date="{{ item.date is empty ? "" :  item.date|date("d M Y \\a\\t m:i") }}">{{ item.date|date("d M Y") }}</time>
                                 </div>
-                                {#                    <div class="description shadow p-3 border bg-light shadow-md"><blockquote>{{ item.description|raw }}</blockquote></div>#}
                                 <div class="description p-3 bg-light"><blockquote>{{ item.description|raw }}</blockquote></div>
                                 {% if item.href is not empty %}
                                     <ul class="links text-end">
@@ -85,5 +84,8 @@
         </div>
     </section>
 </main>
+<footer class="bg-blue">
+<div class="text-md-center py-2">Last updated: {{ "now"|date("d M Y \\a\\t m:i T") }}</div>
+</footer>
 </body>
 </html>
