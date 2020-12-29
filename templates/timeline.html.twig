@@ -33,7 +33,7 @@
         <h1 class="pb-3">Celebrating 20 years of Drupal</h1>
     </section>
     <section class="row">
-        <div class="col-8">
+        <div class="col">
             <div class="content">
                 <h3 class="fs-4" id="summary-problem-motivation">Problem/Motivation</h3>
                 <p>Notable events in Drupal's history.</p>
@@ -45,11 +45,11 @@
             {%  for year, items in data %}
                 <div class="year {{ year }}">
                     <div class="timeline"></div>
-                    <div class="item-year pt-5">
+                    <div class="item-year py-5">
                         <a href="#year-{{ year }}"><h4 id="year-{{ year }}" class="btn btn-success">{{ year }}</h4></a>
                     </div>
                     {%  for delta, item in items %}
-                        <div class="item-card py-5" id="timeline-{{ item.hash }}">
+                        <div class="item-card py-3" id="timeline-{{ item.hash }}">
                             <a href="{{ item.username is empty ? '#timeline-' ~ item.hash : item.profileUrl }}" title="View user profile." class="picture" target="{{ item.profileUrl is empty ? '_self' : '_blank' }}">
                                 <img src="{{ item.avatar is empty ? img_path ~ '/default.png' : item.avatar }}" width="80" height="80" alt="profile picture">
                             </a>
@@ -79,7 +79,7 @@
                 </div>
             {% endfor %}
         </div>
-        <div class="col-4">
+        <div class="col-md-4">
             {% include 'tweets.html.twig' only %}
         </div>
     </section>
