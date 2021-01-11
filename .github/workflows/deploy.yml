@@ -49,6 +49,7 @@ jobs:
         author: Vijaya Chandran Mani<vijaycs85@gmail.com>
         allow_empty_commit: false
         commit_message: 'Deploy changes'
+        fqdn: drupalhistory.org
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
