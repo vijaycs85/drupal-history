@@ -32,6 +32,7 @@ class Client
 
     protected function generate()
     {
+        $result = [];
         $content = $this->getContent();
         foreach ($content as $delta => $item) {
             $date = DateTime::createFromFormat(DateTimeInterface::ATOM, $item->date);
@@ -51,6 +52,7 @@ class Client
 
     protected function getContent()
     {
+        $response_body = [];
         $data_filename  = __DIR__ . '/../data/drupal-timeline.json';
         // For now, serving from local file.
         // return json_decode(file_get_contents($data_filename));
