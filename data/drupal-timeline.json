@@ -1,5 +1,15 @@
 [
   {
+    "priority": 1,
+    "date": "2022-12-14T00:00:00+00:00",
+    "title": "Drupal 10 is released",
+    "username": "mherchel",
+    "avatar": "https://www.drupal.org/files/styles/grid-2-2x-square/public/user-pictures/picture-118428-1555375519.jpg?itok=rhdsEPN-",
+    "href": "https://www.drupal10party.com/",
+    "description": "Claro administration theme and Olivero default theme, the introduction of CKEditor 5, further jQuery replacements, theme starterkit tools for theme creation, and Symfony 6 under the hood with PHP 8.1 requirement.",
+    "comment": ""
+  },
+  {
     "priority": 4,
     "date": "2020-11-26T00:00:00+00:00",
     "title": "PHP 8 is released",
@@ -78,6 +88,16 @@
     "avatar": "https://avatars3.githubusercontent.com/u/2510034?s=460&v=4",
     "href": "https://www.jetbrains.com/lp/php-25/#e_2015_12_03",
     "description": "A major language renewal comes with the new Zend Engine 3 ([PHPNG](https://wiki.php.net/phpng)), It’s also twice as fast as the previous PHP 5.6 release.",
+    "comment": ""
+  },
+  {
+    "priority": 3,
+    "date": "2016-05-14T00:23:00+00:00",
+    "title": "Drupal Diversity & Inclusion Founded",
+    "username": "sparklingrobots",
+    "avatar": "https://www.drupaldiversity.com/sites/default/files/inline-images/DSC_2303.JPG",
+    "href": "https://www.drupaldiversity.com",
+    "description": "After a DrupalCon New Orleans session on diversity led by [Nikki Stevens](https://www.drupal.org/u/drnikki) and [Karyn Cassio](https://www.drupal.org/u/techgirlgeek), [Drupal Diversity & Inclusion](https://drupaldiversity.com) was founded by Nikki Stevens and members of the community to advocate for diversity, equity, and inclusion.",
     "comment": ""
   },
   {
