@@ -7,7 +7,7 @@ import { Heart } from 'lucide-react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: '25 Years of Drupal',
+    title: '25 Years of Drupal | Drupal History',
     description: 'Celebrating the history and evolution of Drupal.',
 };
 
