@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-drupal-blue: #0678BE;
+  --color-drupal-light: #26A7E9;
+  --color-drupal-dark: #0f1f33;
+  --color-accent-pink: #d53f8c;
+  --color-accent-purple: #805ad5;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased selection:bg-drupal-light/30;
+  background-image:
+    radial-gradient(circle at 15% 50%, rgba(6, 120, 190, 0.08), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(128, 90, 213, 0.08), transparent 25%);
+  background-attachment: fixed;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-950;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-full border-2 border-slate-950 hover:bg-slate-700 transition-colors;
+}

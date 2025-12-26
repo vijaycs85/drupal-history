@@ -4,3 +4,4 @@ node_modules
 .phpunit.cache
 reports
 build
+.next/
